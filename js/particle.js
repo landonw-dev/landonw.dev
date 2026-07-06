@@ -5,6 +5,7 @@
    ========================================================================== */
 
 (function () {
+   console.log("NEW particles.js loaded");
   const canvas = document.getElementById("grid-canvas");
   if (!canvas) return;
 
