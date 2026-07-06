@@ -200,7 +200,7 @@ h4 {
   align-items: center;
   justify-content: space-between;
   gap: var(--space-6);
-  padding: 20px 34px;
+  padding: 14px 28px;
   width: min(90vw, 760px);
   background: var(--color-glass);
   backdrop-filter: blur(18px);
