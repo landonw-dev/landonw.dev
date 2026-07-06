@@ -200,8 +200,8 @@ h4 {
   align-items: center;
   justify-content: space-between;
   gap: var(--space-6);
-  padding: 14px 28px;
-  width: min(90vw, 760px);
+  padding: 10px 24px;
+  width: min(90vw, 2000px);
   background: var(--color-glass);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
@@ -213,9 +213,9 @@ h4 {
 }
 
 .navbar.is-scrolled {
-  top: 14px;
+  top: 25px;
   padding: 10px 24px;
-  width: min(88vw, 700px);
+  width: min(88vw, 1000px);
   box-shadow: 0 10px 34px rgba(0, 0, 0, 0.5);
 }
 
