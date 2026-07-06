@@ -5,7 +5,6 @@
    ========================================================================== */
 
 (function () {
-   console.log("NEW particles.js loaded");
   const canvas = document.getElementById("grid-canvas");
   if (!canvas) return;
 
@@ -40,22 +39,22 @@
   }
 
   function drawGrid() {
-     ctx.strokeStyle = "#00ff00";
-     ctx.lineWidth = 2;
+    ctx.strokeStyle = "rgba(255, 255, 255, 0.035)";
+    ctx.lineWidth = 1;
 
-  for (let x = 0; x <= width; x += GRID_SIZE) {
-    ctx.beginPath();
-    ctx.moveTo(x, 0);
-    ctx.lineTo(x, height);
-    ctx.stroke();
-  }
+    for (let x = 0; x <= width; x += GRID_SIZE) {
+      ctx.beginPath();
+      ctx.moveTo(x + 0.5, 0);
+      ctx.lineTo(x + 0.5, height);
+      ctx.stroke();
+    }
 
-  for (let y = 0; y <= height; y += GRID_SIZE) {
-    ctx.beginPath();
-    ctx.moveTo(0, y);
-    ctx.lineTo(width, y);
-    ctx.stroke();
-  }
+    for (let y = 0; y <= height; y += GRID_SIZE) {
+      ctx.beginPath();
+      ctx.moveTo(0, y + 0.5);
+      ctx.lineTo(width, y + 0.5);
+      ctx.stroke();
+    }
   }
 
   function drawParticles() {
