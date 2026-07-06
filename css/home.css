@@ -128,7 +128,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: right;
+  justify-content: center;
   height: 100%;
   opacity: 0;
   animation: fadeIn 1s var(--ease-out) forwards;
