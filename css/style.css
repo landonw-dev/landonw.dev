@@ -195,12 +195,12 @@ h4 {
   top: 25px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 150;
+  z-index: 100;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: var(--space-6);
-  padding: 14px 28px;
+  padding: 20px 34px;
   width: min(90vw, 760px);
   background: var(--color-glass);
   backdrop-filter: blur(18px);
