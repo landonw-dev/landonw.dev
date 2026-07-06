@@ -58,7 +58,7 @@
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
   align-items: center;
-  gap: var(--space-12);
+  gap: var(--space-6);
 }
 
 .hero__content {
@@ -163,7 +163,7 @@
 }
 
 .portrait-card {
-  position: relative;
+  position: right;
   width: 300px;
   aspect-ratio: 4 / 5;
   border-radius: var(--radius-lg);
