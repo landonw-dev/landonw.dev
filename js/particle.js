@@ -39,7 +39,7 @@
   }
 
   function drawGrid() {
-    ctx.strokeStyle = "rgba(255, 255, 255, 0.035)";
+    ctx.strokeStyle = "rgba(255, 255, 255, 0.15)";
     ctx.lineWidth = 1;
 
     for (let x = 0; x <= width; x += GRID_SIZE) {
