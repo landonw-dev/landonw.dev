@@ -59,7 +59,7 @@
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: var(--space-6);
-  margin-left: 100px;
+  margin-left: 200px;
 }
 
 .hero__content {
@@ -134,7 +134,7 @@
   opacity: 0;
   animation: fadeIn 1s var(--ease-out) forwards;
   animation-delay: 0.6s;
-  margin-left: 400px;
+  margin-left: 300px;
 }
 
 .portrait-backdrop {
