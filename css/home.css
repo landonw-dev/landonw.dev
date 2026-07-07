@@ -55,14 +55,17 @@
   z-index: 1;
 }
 
-.splash__tags .tag{
-    font-size: 1.2rem;
+.splash__tags {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
     justify-content: center;
     gap: 1rem;
     margin-bottom: 0.5rem;
+}
+
+.splash__tags .tag {
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 /* ---------- 2. Hero Section ---------- */
