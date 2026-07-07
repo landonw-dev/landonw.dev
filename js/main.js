@@ -55,6 +55,26 @@
     window.typeText(el, text, { delay: 1450, speed: 42 });
   }
 
+   /* ---------- Projects sliding tab ---------- */
+    const tabs = document.querySelectorAll(".tab");
+const slider = document.querySelector(".portfolio-slider");
+
+tabs.forEach(tab => {
+
+    tab.addEventListener("click", () => {
+
+        tabs.forEach(t => t.classList.remove("active"));
+
+        tab.classList.add("active");
+
+        const index = tab.dataset.tab;
+
+        slider.style.transform = `translateX(-${index * 33.3333}%)`;
+
+    });
+
+});
+
   /* ---------- Generic reveal-on-scroll ---------- */
   function initRevealOnScroll() {
     const targets = document.querySelectorAll(".reveal, .reveal-stagger");
