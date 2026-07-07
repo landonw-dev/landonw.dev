@@ -186,9 +186,9 @@ h4 {
   background:
     radial-gradient(600px circle at 15% 30%, rgba(255, 255, 255, 0.15), transparent 60%),
     radial-gradient(350px circle at 30% 80%, rgba(255, 255, 255, 0.15), transparent 60%),
-    radial-gradient(150px circle at 55% 35%, rgba(255, 255, 255, 0.15), transparent 60%),
-    radial-gradient(300px circle at 90% 25%, rgba(255, 255, 255, 0.15), transparent 60%),
-    radial-gradient(500px circle at 80% 70%, rgba(255, 255, 255, 0.15), transparent 60%);
+    radial-gradient(250px circle at 45% 35%, rgba(255, 255, 255, 0.15), transparent 60%),
+    radial-gradient(300px circle at 85% 25%, rgba(255, 255, 255, 0.15), transparent 60%),
+    radial-gradient(500px circle at 70% 70%, rgba(255, 255, 255, 0.15), transparent 60%);
   animation: glowDrift 18s ease-in-out infinite;
 }
 
