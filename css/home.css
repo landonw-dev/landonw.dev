@@ -53,6 +53,14 @@
   z-index: 1;
 }
 
+.splash__tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
 /* ---------- 2. Hero Section ---------- */
 .hero {
   display: grid;
