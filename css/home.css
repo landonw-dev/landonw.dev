@@ -350,6 +350,43 @@
   color: var(--color-text-secondary);
 }
 
+.portfolio-tabs {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.tab {
+    background: transparent;
+    border: none;
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    font-size: var(--fs-md);
+    padding-bottom: .5rem;
+    transition: .3s;
+}
+
+.tab.active {
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.portfolio-slider {
+    display: flex;
+    width: 300%;
+    transition: transform .5s ease;
+}
+
+.portfolio-panel {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.portfolio-wrapper {
+    overflow: hidden;
+}
+
 /* ---------- 5. Skills Section ---------- */
 .skills-grid {
   display: grid;
