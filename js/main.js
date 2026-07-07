@@ -69,7 +69,7 @@ tabs.forEach(tab => {
 
         const index = tab.dataset.tab;
 
-        slider.style.transform = `translateX(-${index * 33.3333}%)`;
+        slider.style.transform = `translateX(-${index * 100}%)`;
 
     });
 
