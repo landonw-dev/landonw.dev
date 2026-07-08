@@ -1,219 +1,59 @@
-/* ==========================================
+/* ==========================================================
    PROJECT PAGE
-========================================== */
+   Enterprise Active Directory Lab
+========================================================== */
+
+
+/* ---------- Base Layout ---------- */
 
 .project-page {
     width: min(1200px, 90%);
     margin: 0 auto;
-    padding-top: 120px;
+    padding-top: 90px;
+    overflow: hidden;
 }
 
 
-/* HERO */
-
-.project-hero {
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: center;
-
-}
-
-
-.project-title {
-
-    font-size: 3.5rem;
-
-}
-
-
-.project-description {
-
-    margin-top: 1.5rem;
-    line-height: 1.7;
-    color: var(--color-text-muted);
-
-}
-
-
-/* TAGS */
-
-.project-tags {
-
-    display: flex;
-    flex-wrap: wrap;
-    gap: .75rem;
-    margin: 2rem 0;
-
-}
-
-
-.tag {
-
-    padding: .5rem 1rem;
-
-    border-radius: 50px;
-
-    background:
-    rgba(255,255,255,.05);
-
-    border:
-    1px solid rgba(255,255,255,.1);
-
+.project-page .section {
+    min-height: auto;
+    padding: 3.5rem 0;
 }
 
 
 
-/* GLASS CARD */
-
-
-.glass-card {
-
-    background:
-    rgba(255,255,255,.04);
-
-    border:
-    1px solid rgba(255,255,255,.1);
-
-    backdrop-filter:
-    blur(20px);
-
-    border-radius:
-    20px;
-
-    padding:
-    2rem;
-
-}
-
-
-/* SECTIONS */
-
-
-.project-section {
-
-    margin-top: 5rem;
-
-}
-
-
-/* GRIDS */
-
-
-.objectives-grid,
-.vm-grid,
-.network-grid,
-.services-grid {
-
-    display:grid;
-
-    grid-template-columns:
-    repeat(auto-fit,minmax(250px,1fr));
-
-    gap:1.5rem;
-
-}
-
-
-
-/* IMAGES */
-
-
-.project-hero__image img,
-.project-section img {
-
-    width:100%;
-
-    border-radius:20px;
-
-}
-
-
-
-/* GALLERY */
-
-
-.gallery-grid {
-
-    display:grid;
-
-    grid-template-columns:
-    repeat(auto-fit,minmax(250px,1fr));
-
-    gap:1rem;
-
-}
-
-
-.gallery-grid img {
-
-    width:100%;
-    border-radius:20px;
-
-}
-
-/* ================================
-   PROJECT PAGE
-================================ */
-
-
-.project-page {
-    overflow:hidden;
-}
-
+/* ---------- Hero ---------- */
 
 
 .project-hero-card {
 
-    display:grid;
-
-    grid-template-columns:1fr 1fr;
-
-    gap:var(--space-6);
-
-    padding:3rem;
-
-    border-radius:24px;
-
     background:
-    rgba(255,255,255,0.04);
+        rgba(255,255,255,0.04);
 
     border:
-    1px solid rgba(255,255,255,0.1);
+        1px solid rgba(255,255,255,0.12);
 
     backdrop-filter:
-    blur(20px);
+        blur(20px);
+
+    border-radius:
+        24px;
+
+    padding:
+        2.25rem;
 
 }
 
 
 
-.project-hero-content h1 {
+.project-hero__grid {
 
-    font-size:clamp(2.5rem,5vw,4rem);
+    display:grid;
 
-    margin-top:1rem;
+    grid-template-columns:
+        1fr 1fr;
 
-}
-
-
-
-.project-hero-content p {
-
-    margin-top:1.5rem;
-
-    line-height:1.7;
-
-    opacity:.8;
-
-}
-
-
-
-.project-image {
-
-    display:flex;
+    gap:
+        3rem;
 
     align-items:center;
 
@@ -221,26 +61,340 @@
 
 
 
-.project-image img {
+.project-title {
 
-    width:100%;
+    font-size:
+        clamp(2.5rem,5vw,4rem);
 
-    border-radius:20px;
+    line-height:
+        1.1;
+
+    margin-top:
+        1rem;
+
+}
+
+
+
+.project-description {
+
+    margin-top:
+        1.25rem;
+
+    line-height:
+        1.7;
+
+    color:
+        var(--color-text-muted);
+
+    max-width:
+        600px;
+
+}
+
+
+
+/* ---------- Tags ---------- */
+
+
+.project-card__tags {
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:.65rem;
+
+    margin:
+        1.5rem 0;
+
+}
+
+
+
+.tag {
+
+    display:inline-flex;
+
+    align-items:center;
+
+    padding:
+        .45rem .9rem;
+
+    border-radius:
+        999px;
+
+    font-size:
+        .85rem;
+
+
+    background:
+        rgba(255,255,255,.05);
+
+    border:
+        1px solid rgba(255,255,255,.12);
+
+    color:
+        rgba(255,255,255,.85);
 
 }
 
 
 
 
+/* ==========================================================
+   NETWORK DIAGRAM
+========================================================== */
 
-.project-grid {
+
+.network-diagram-card {
+
+
+    padding:
+        1.75rem;
+
+
+    border-radius:
+        22px;
+
+
+    background:
+        rgba(255,255,255,.03);
+
+
+    border:
+        1px solid rgba(255,255,255,.12);
+
+
+    backdrop-filter:
+        blur(15px);
+
+
+}
+
+
+
+.network-node {
+
+
+    padding:
+        1rem;
+
+
+    text-align:
+        center;
+
+
+    border-radius:
+        14px;
+
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.08),
+            rgba(255,255,255,.02)
+        );
+
+
+    border:
+        1px solid rgba(255,255,255,.15);
+
+
+    box-shadow:
+        0 0 25px rgba(0,150,255,.12);
+
+
+    font-weight:
+        600;
+
+}
+
+
+
+.network-node span {
+
+    display:block;
+
+    margin-top:
+        .5rem;
+
+    font-size:
+        .8rem;
+
+    opacity:
+        .65;
+
+    font-family:
+        "JetBrains Mono", monospace;
+
+}
+
+
+
+.network-node.server {
+
+    margin:
+        1rem 0;
+
+}
+
+
+
+.network-line {
+
+
+    width:
+        2px;
+
+    height:
+        35px;
+
+    margin:
+        auto;
+
+    background:
+        rgba(255,255,255,.25);
+
+}
+
+
+
+.network-branches {
 
     display:grid;
 
     grid-template-columns:
-    repeat(auto-fit,minmax(220px,1fr));
+        repeat(3,1fr);
 
-    gap:1.5rem;
+    gap:
+        1rem;
+
+}
+
+
+
+/* ==========================================================
+   PROJECT STATS
+========================================================== */
+
+
+.stats-grid {
+
+
+    display:grid;
+
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+
+    gap:
+        1rem;
+
+
+}
+
+
+
+.stat-card {
+
+
+    padding:
+        1.5rem;
+
+
+    border-radius:
+        18px;
+
+
+    background:
+        rgba(255,255,255,.04);
+
+
+    border:
+        1px solid rgba(255,255,255,.1);
+
+
+    text-align:
+        center;
+
+
+}
+
+
+
+.stat-card h3 {
+
+
+    font-size:
+        2rem;
+
+
+    font-family:
+        "Space Grotesk", sans-serif;
+
+
+}
+
+
+
+.stat-card p {
+
+
+    margin-top:
+        .5rem;
+
+
+    opacity:
+        .7;
+
+
+}
+
+
+
+/* ==========================================================
+   SECTION HEADINGS
+========================================================== */
+
+
+.section-head {
+
+    margin-bottom:
+        1.75rem;
+
+}
+
+
+
+.section-head__title {
+
+    margin-top:
+        .5rem;
+
+}
+
+
+
+/* ==========================================================
+   INFORMATION CARDS
+========================================================== */
+
+
+.project-grid {
+
+
+    display:grid;
+
+
+    grid-template-columns:
+        repeat(auto-fit,minmax(240px,1fr));
+
+
+    gap:
+        1rem;
+
 
 }
 
@@ -249,25 +403,25 @@
 .project-info-card {
 
 
-    padding:2rem;
+    padding:
+        1.5rem;
 
 
-    border-radius:20px;
+    border-radius:
+        18px;
 
 
     background:
-    rgba(255,255,255,.04);
+        rgba(255,255,255,.04);
 
 
     border:
-    1px solid rgba(255,255,255,.1);
+        1px solid rgba(255,255,255,.1);
 
 
-    backdrop-filter:
-    blur(15px);
+    transition:
+        .25s ease;
 
-
-    transition:.3s ease;
 
 }
 
@@ -275,10 +429,14 @@
 
 .project-info-card:hover {
 
-    transform:translateY(-5px);
+
+    transform:
+        translateY(-5px);
+
 
     border-color:
-    rgba(100,150,255,.4);
+        rgba(0,150,255,.35);
+
 
 }
 
@@ -286,9 +444,14 @@
 
 .project-info-card h3 {
 
-    font-size:1rem;
 
-    opacity:.7;
+    font-size:
+        1rem;
+
+
+    opacity:
+        .7;
+
 
 }
 
@@ -296,121 +459,227 @@
 
 .project-info-card p {
 
-    margin-top:.5rem;
 
-    font-size:1.2rem;
-
-}
-
-.project-hero__grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-6);
-  align-items: center;
-}
+    margin-top:
+        .75rem;
 
 
-.network-diagram-card {
-  padding: 2rem;
-  background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(255,255,255,0.1);
-  border-radius: 20px;
-  backdrop-filter: blur(15px);
-}
+    line-height:
+        1.6;
 
-
-.network-node {
-
-  padding: 1rem;
-  text-align: center;
-
-  border-radius: 12px;
-
-  background:
-    linear-gradient(
-      145deg,
-      rgba(255,255,255,.08),
-      rgba(255,255,255,.02)
-    );
-
-  border: 1px solid rgba(255,255,255,.15);
-
-  box-shadow:
-    0 0 20px rgba(0,150,255,.15);
 
 }
 
 
-.network-node span {
 
-  display:block;
+/* ==========================================================
+   TERMINAL STYLE SECTIONS
+========================================================== */
 
-  margin-top:.5rem;
 
-  font-size:.8rem;
+.terminal-card {
 
-  opacity:.7;
+
+    padding:
+        1.75rem;
+
+
+    border-radius:
+        20px;
+
+
+    background:
+        rgba(0,0,0,.35);
+
+
+    border:
+        1px solid rgba(255,255,255,.1);
+
+
+    overflow-x:auto;
+
+
+}
+
+
+
+.terminal-card pre {
+
+
+    margin:
+        0;
+
+
+    font-family:
+        "JetBrains Mono", monospace;
+
+
+    line-height:
+        1.7;
+
+
+    color:
+        rgba(255,255,255,.85);
+
 
 }
 
 
-.network-connection {
 
-  height:40px;
+/* ==========================================================
+   SERVICES
+========================================================== */
 
-  width:2px;
 
-  background:rgba(255,255,255,.25);
+.services-grid {
 
-  margin:auto;
+
+    display:grid;
+
+
+    grid-template-columns:
+        repeat(auto-fit,minmax(220px,1fr));
+
+
+    gap:
+        1rem;
+
+
+}
+
+
+
+.services-grid div {
+
+
+    padding:
+        1.25rem;
+
+
+    border-radius:
+        16px;
+
+
+    background:
+        rgba(255,255,255,.04);
+
+
+    border:
+        1px solid rgba(255,255,255,.1);
+
 
 }
 
 
-.network-branches {
 
-  display:grid;
+/* ==========================================================
+   CONTENT CARDS
+========================================================== */
 
-  grid-template-columns:repeat(3,1fr);
 
-  gap:1rem;
+.project-content-card {
 
-  margin-top:2rem;
+
+    padding:
+        2rem;
+
+
+    border-radius:
+        20px;
+
+
+    background:
+        rgba(255,255,255,.04);
+
+
+    border:
+        1px solid rgba(255,255,255,.1);
+
 
 }
 
+
+
+.project-content-card p {
+
+
+    margin-top:
+        1rem;
+
+
+    line-height:
+        1.7;
+
+
+    color:
+        var(--color-text-muted);
+
+
+}
+
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
 
 
 @media(max-width:900px){
 
 
-.project-hero-card {
+    .project-hero__grid {
 
-grid-template-columns:1fr;
-
-}
-
-
-}
-
-
-
-/* MOBILE */
-
-
-@media(max-width:800px){
-
-    .project-hero{
-
-        grid-template-columns:1fr;
+        grid-template-columns:
+            1fr;
 
     }
 
 
-    .project-title{
+    .stats-grid {
 
-        font-size:2.5rem;
+        grid-template-columns:
+            repeat(2,1fr);
 
     }
+
+
+    .network-branches {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+}
+
+
+
+@media(max-width:600px){
+
+
+    .project-page {
+
+        width:
+            92%;
+
+    }
+
+
+    .stats-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .project-hero-card {
+
+        padding:
+            1.5rem;
+
+    }
+
 
 }
