@@ -153,6 +153,169 @@
 
 }
 
+/* ================================
+   PROJECT PAGE
+================================ */
+
+
+.project-page {
+    overflow:hidden;
+}
+
+
+
+.project-hero-card {
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:var(--space-6);
+
+    padding:3rem;
+
+    border-radius:24px;
+
+    background:
+    rgba(255,255,255,0.04);
+
+    border:
+    1px solid rgba(255,255,255,0.1);
+
+    backdrop-filter:
+    blur(20px);
+
+}
+
+
+
+.project-hero-content h1 {
+
+    font-size:clamp(2.5rem,5vw,4rem);
+
+    margin-top:1rem;
+
+}
+
+
+
+.project-hero-content p {
+
+    margin-top:1.5rem;
+
+    line-height:1.7;
+
+    opacity:.8;
+
+}
+
+
+
+.project-image {
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+
+
+.project-image img {
+
+    width:100%;
+
+    border-radius:20px;
+
+}
+
+
+
+
+
+.project-grid {
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:1.5rem;
+
+}
+
+
+
+.project-info-card {
+
+
+    padding:2rem;
+
+
+    border-radius:20px;
+
+
+    background:
+    rgba(255,255,255,.04);
+
+
+    border:
+    1px solid rgba(255,255,255,.1);
+
+
+    backdrop-filter:
+    blur(15px);
+
+
+    transition:.3s ease;
+
+}
+
+
+
+.project-info-card:hover {
+
+    transform:translateY(-5px);
+
+    border-color:
+    rgba(100,150,255,.4);
+
+}
+
+
+
+.project-info-card h3 {
+
+    font-size:1rem;
+
+    opacity:.7;
+
+}
+
+
+
+.project-info-card p {
+
+    margin-top:.5rem;
+
+    font-size:1.2rem;
+
+}
+
+
+
+@media(max-width:900px){
+
+
+.project-hero-card {
+
+grid-template-columns:1fr;
+
+}
+
+
+}
+
 
 
 /* MOBILE */
