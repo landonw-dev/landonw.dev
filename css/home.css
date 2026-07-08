@@ -435,6 +435,7 @@
   gap: var(--space-5);
   width: 100%;
   max-width: 760px;
+  margin-left: 25px;
 }
 
 .timeline-item {
