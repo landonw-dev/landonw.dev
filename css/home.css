@@ -394,8 +394,10 @@
     gap: 0.4rem;
 
     margin-top: 1rem;
+    margin-left: 22rem;
 
     color: var(--color-accent);
+    font-size: 14px;
     font-weight: 600;
     text-decoration: none;
 
