@@ -1,266 +1,868 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>landonw.dev — Enterprise Active Directory</title>
-  <meta name="description" content="Portfolio of an Information Technology Professional — B.S. in Applied Computing." />
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="../css/style.css" />
-  <link rel="stylesheet" href="../css/home.css" />
-  <link rel="stylesheet" href="../css/animations.css" />
-  <link rel="stylesheet" href="../css/project.css" />
+<title>landonw.dev — Enterprise Active Directory Lab</title>
+
+<meta name="description" content="Enterprise Active Directory infrastructure lab built using VMware, Windows Server, DNS, DHCP, and Active Directory." />
+
+
+<!-- Fonts -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+
+<!-- Styles -->
+
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/home.css">
+<link rel="stylesheet" href="../css/animations.css">
+<link rel="stylesheet" href="../css/project.css">
+
+
 </head>
 
 
 <body>
 
 
-  <!-- ================= Background Layers ================= -->
+<!-- ================= BACKGROUND ================= -->
 
-  <canvas id="grid-canvas" aria-hidden="true"></canvas>
-  <div class="grid-glow" aria-hidden="true"></div>
+<canvas id="grid-canvas"></canvas>
+<div class="grid-glow"></div>
 
 
 
-  <!-- ================= Floating Navbar ================= -->
+<!-- ================= NAVBAR ================= -->
 
-  <nav class="navbar">
 
-    <a href="../index.html" class="navbar__brand">
+<nav class="navbar">
 
-      <span class="navbar__logo">
-        landonw.dev
-      </span>
+<a href="../index.html" class="navbar__brand">
 
-    </a>
+<span class="navbar__logo">
+landonw.dev
+</span>
 
+</a>
 
-    <button class="navbar__toggle" aria-label="Toggle navigation menu">
 
-      <span></span>
-      <span></span>
-      <span></span>
+<ul class="navbar__links">
 
-    </button>
+<li>
+<a class="navbar__link" href="../index.html">
+Home
+</a>
+</li>
 
 
-    <ul class="navbar__links">
+<li>
+<a class="navbar__link" href="../index.html#about">
+About
+</a>
+</li>
 
-      <li>
-        <a class="navbar__link" href="../index.html">
-          Home
-        </a>
-      </li>
 
-      <li>
-        <a class="navbar__link" href="../index.html#about">
-          About
-        </a>
-      </li>
+<li>
+<a class="navbar__link is-active" href="../index.html#projects">
+Portfolio
+</a>
+</li>
 
-      <li>
-        <a class="navbar__link is-active" href="../index.html#projects">
-          Portfolio
-        </a>
-      </li>
 
-      <li>
-        <a class="navbar__link" href="../index.html#contact">
-          Contact
-        </a>
-      </li>
+<li>
+<a class="navbar__link" href="../index.html#contact">
+Contact
+</a>
+</li>
 
-    </ul>
 
-  </nav>
+</ul>
 
+</nav>
 
 
 
 
-  <!-- ================= Project Page ================= -->
+<main class="project-page">
 
-  <main class="project-page">
 
 
-    <!-- ---------- Hero ---------- -->
+<!-- ================= HERO ================= -->
 
-    <section class="section project-hero">
 
-  <div class="container">
+<section class="section">
 
-    <div class="project-hero__grid">
 
+<div class="container">
 
-      <!-- ================= HERO CONTENT ================= -->
 
-      <div class="project-hero__content reveal">
+<div class="project-hero-card reveal">
 
 
-        <span class="eyebrow">
-          Windows Server Infrastructure
-        </span>
+<div class="project-hero__grid">
 
 
-        <h1 class="project-title">
-          Enterprise Active Directory Lab
-        </h1>
+<div class="project-hero__content">
 
 
-        <p class="project-description">
+<span class="eyebrow">
+Windows Server Infrastructure
+</span>
 
-          Designed and deployed an enterprise-style Windows Server
-          environment using VMware. Configured Active Directory,
-          DNS, DHCP, File Services, Print Services, and Windows
-          clients within an isolated network.
 
-        </p>
+<h1 class="hero__title">
 
+Enterprise
+<span>
+Active Directory Lab
+</span>
 
+</h1>
 
-        <div class="project-card__tags">
 
-          <span class="tag">VMware</span>
-          <span class="tag">Windows Server 2022</span>
-          <span class="tag">Active Directory</span>
-          <span class="tag">DNS</span>
-          <span class="tag">DHCP</span>
 
-        </div>
+<p class="hero__desc">
 
+Designed and deployed an enterprise-style Windows Server
+environment from scratch using VMware. This project
+simulates a small business network featuring Active
+Directory, DNS, DHCP, File Services, Print Services,
+and domain-connected Windows clients.
 
+</p>
 
-        <div class="hero__actions">
 
-          <a class="btn btn-primary" href="#">
-            View Documentation
-          </a>
 
+<div class="project-card__tags">
 
-          <a class="btn btn-secondary" href="#">
-            GitHub
-          </a>
+<span class="tag">VMware</span>
+<span class="tag">Windows Server 2022</span>
+<span class="tag">Active Directory</span>
+<span class="tag">DNS</span>
+<span class="tag">DHCP</span>
+<span class="tag">File Services</span>
 
+</div>
 
-        </div>
 
 
-      </div>
+<div class="hero__actions">
 
+<a class="btn btn-primary">
+Documentation
+</a>
 
+<a class="btn btn-secondary">
+GitHub
+</a>
 
-      <!-- ================= NETWORK DIAGRAM ================= -->
+</div>
 
-      <div class="project-hero__visual reveal">
 
 
-        <div class="network-diagram-card">
+</div>
 
 
-          <div class="network-node router">
 
-            Router / Gateway
 
-            <span>
-              192.168.10.1
-            </span>
 
-          </div>
+<!-- NETWORK DIAGRAM -->
 
 
+<div class="network-diagram-card">
 
-          <div class="network-connection"></div>
 
+<div class="network-node">
 
+🌐 Router / Gateway
 
-          <div class="network-node server">
+<span>
+192.168.10.1
+</span>
 
-            LW-DC-01
+</div>
 
-            <span>
-              Domain Controller
-              <br>
-              AD / DNS / DHCP
-              <br>
-              192.168.10.2
-            </span>
 
-          </div>
+<div class="network-line"></div>
 
 
+<div class="network-node server">
 
-          <div class="network-branches">
+🖥 LW-DC-01
 
+<span>
+Domain Controller
+<br>
+AD DS • DNS • DHCP
+<br>
+192.168.10.2
+</span>
 
-            <div class="network-node">
+</div>
 
-              LW-SRV01
 
-              <span>
-                File + Print Server
-                <br>
-                192.168.10.3
-              </span>
 
-            </div>
+<div class="network-branches">
 
 
+<div class="network-node">
 
-            <div class="network-node">
+📁 LW-SRV01
 
-              LW-DSKTP-IT
+<span>
+File + Print Server
+<br>
+192.168.10.3
+</span>
 
-              <span>
-                IT Workstation
-                <br>
-                Windows 10
-              </span>
+</div>
 
-            </div>
 
 
+<div class="network-node">
 
-            <div class="network-node">
+💻 LW-DSKTP-IT
 
-              LW-DSKTP-01
+<span>
+IT Workstation
+<br>
+Windows 10
+</span>
 
-              <span>
-                Standard Client
-                <br>
-                Windows 10
-              </span>
+</div>
 
-            </div>
 
 
-          </div>
+<div class="network-node">
 
+💻 LW-DSKTP-01
 
-        </div>
+<span>
+Standard Client
+<br>
+Windows 10
+</span>
 
+</div>
 
-      </div>
 
+</div>
 
-    </div>
 
-  </div>
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
 
 </section>
-  </main>
-  
-  <!-- ================= Scripts ================= -->
-  <script src="../js/particles.js"></script>
-  <script src="../js/typing.js"></script>
-  <script src="../js/scroll.js"></script>
-  <script src="../js/main.js"></script>
+
+
+
+
+
+
+<!-- ================= PROJECT SUMMARY ================= -->
+
+
+<section class="section">
+
+
+<div class="container">
+
+
+<div class="section-head reveal">
+
+<span class="eyebrow">
+Project Overview
+</span>
+
+
+<h2 class="section-head__title">
+Building a Small Enterprise Environment
+</h2>
+
+
+</div>
+
+
+
+<div class="stats-grid">
+
+
+<div class="stat-card">
+<h3>4</h3>
+<p>Virtual Machines</p>
+</div>
+
+
+<div class="stat-card">
+<h3>5+</h3>
+<p>Infrastructure Services</p>
+</div>
+
+
+<div class="stat-card">
+<h3>WIN.LOCAL</h3>
+<p>Active Directory Domain</p>
+</div>
+
+
+<div class="stat-card">
+<h3>/24</h3>
+<p>Network Subnet</p>
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- ================= ENVIRONMENT ================= -->
+
+
+<section class="section">
+
+
+<div class="container">
+
+
+<div class="section-head">
+
+<span class="eyebrow">
+Lab Environment
+</span>
+
+
+<h2 class="section-head__title">
+Virtual Infrastructure
+</h2>
+
+
+</div>
+
+
+
+
+<div class="project-grid">
+
+
+<div class="project-info-card">
+
+<h3>
+Platform
+</h3>
+
+<p>
+VMware vCenter
+</p>
+
+</div>
+
+
+<div class="project-info-card">
+
+<h3>
+Operating Systems
+</h3>
+
+<p>
+Windows Server 2022
+<br>
+Windows 10 Clients
+</p>
+
+</div>
+
+
+
+<div class="project-info-card">
+
+<h3>
+Network Type
+</h3>
+
+<p>
+Internal Virtual Network
+</p>
+
+</div>
+
+
+
+<div class="project-info-card">
+
+<h3>
+Domain
+</h3>
+
+<p>
+WIN.LOCAL
+</p>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================= SERVER ROLES ================= -->
+
+
+<section class="section">
+
+
+<div class="container">
+
+
+<div class="section-head">
+
+<span class="eyebrow">
+Infrastructure Services
+</span>
+
+
+<h2 class="section-head__title">
+Server Roles
+</h2>
+
+
+</div>
+
+
+
+
+<div class="project-grid">
+
+
+<div class="project-info-card">
+
+<h3>
+LW-DC-01
+</h3>
+
+<p>
+
+Domain Controller
+
+<br><br>
+
+Active Directory
+<br>
+DNS
+<br>
+DHCP
+
+</p>
+
+</div>
+
+
+
+
+<div class="project-info-card">
+
+<h3>
+LW-SRV01
+</h3>
+
+<p>
+
+File Server
+
+<br><br>
+
+SMB Shares
+<br>
+Print Services
+
+</p>
+
+</div>
+
+
+
+<div class="project-info-card">
+
+<h3>
+LW-DSKTP-IT
+</h3>
+
+<p>
+
+Administrative Testing Client
+
+<br><br>
+
+Windows 10
+
+</p>
+
+</div>
+
+
+
+<div class="project-info-card">
+
+<h3>
+LW-DSKTP-01
+</h3>
+
+<p>
+
+Standard User Client
+
+<br><br>
+
+Domain Joined
+
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================= NETWORK ================= -->
+
+
+<section class="section">
+
+
+<div class="container">
+
+
+<div class="section-head">
+
+<span class="eyebrow">
+Network Architecture
+</span>
+
+
+<h2 class="section-head__title">
+IP Addressing Plan
+</h2>
+
+
+</div>
+
+
+
+
+<div class="terminal-card">
+
+
+<pre>
+
+192.168.10.0/24
+
+
+Gateway
+└── 192.168.10.1
+
+
+Domain Controller
+└── 192.168.10.2
+
+
+Servers
+└── 192.168.10.3 - 192.168.10.5
+
+
+Network Devices
+└── 192.168.10.6 - 192.168.10.10
+
+
+DHCP Range
+└── 192.168.10.11 - 192.168.10.254
+
+
+Broadcast
+└── 192.168.10.255
+
+
+</pre>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- ================= ACTIVE DIRECTORY ================= -->
+
+
+<section class="section">
+
+
+<div class="container">
+
+
+<div class="section-head">
+
+
+<span class="eyebrow">
+Identity Management
+</span>
+
+
+<h2 class="section-head__title">
+Active Directory Structure
+</h2>
+
+
+</div>
+
+
+
+<div class="terminal-card">
+
+
+<pre>
+
+WIN.LOCAL
+
+│
+├── Servers
+│   ├── Domain Controller
+│   └── File Server
+│
+├── Users
+│   ├── Admin Users
+│   └── Standard Users
+│
+├── Groups
+│   ├── Admin_SG
+│   ├── IT_SG
+│   └── Public_SG
+│
+└── Workstations
+    ├── IT
+    └── Desktops
+
+</pre>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================= SERVICES ================= -->
+
+
+<section class="section">
+
+
+<div class="container">
+
+
+<div class="section-head">
+
+<span class="eyebrow">
+Configured Services
+</span>
+
+
+<h2 class="section-head__title">
+Infrastructure Components
+</h2>
+
+
+</div>
+
+
+
+<div class="services-grid">
+
+
+<div>✓ Active Directory</div>
+<div>✓ DNS</div>
+<div>✓ DHCP</div>
+<div>✓ File Services</div>
+<div>✓ Print Services</div>
+<div>✓ Security Groups</div>
+<div>✓ Shared Folders</div>
+<div>✓ Domain Authentication</div>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================= LESSONS ================= -->
+
+
+<section class="section">
+
+
+<div class="container">
+
+
+<div class="project-content-card">
+
+
+<span class="eyebrow">
+Lessons Learned
+</span>
+
+
+<h2>
+Understanding Enterprise Administration
+</h2>
+
+
+
+<p>
+
+This project reinforced the relationship between core
+enterprise services. Proper IP planning, DNS configuration,
+Active Directory design, and centralized management are
+critical components of a reliable infrastructure.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- ================= FUTURE ================= -->
+
+
+<section class="section">
+
+
+<div class="container">
+
+
+<div class="project-content-card">
+
+
+<span class="eyebrow">
+Future Improvements
+</span>
+
+
+<div class="project-card__tags">
+
+<span class="tag">Group Policy</span>
+<span class="tag">WSUS</span>
+<span class="tag">Certificate Services</span>
+<span class="tag">Backup Domain Controller</span>
+<span class="tag">VLAN Segmentation</span>
+<span class="tag">pfSense Firewall</span>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+</main>
+
+
+
+
+
+<script src="../js/particles.js"></script>
+<script src="../js/scroll.js"></script>
+<script src="../js/main.js"></script>
+
 
 </body>
+
 </html>
