@@ -1,0 +1,176 @@
+/* ==========================================
+   PROJECT PAGE
+========================================== */
+
+.project-page {
+    width: min(1200px, 90%);
+    margin: 0 auto;
+    padding-top: 120px;
+}
+
+
+/* HERO */
+
+.project-hero {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+
+}
+
+
+.project-title {
+
+    font-size: 3.5rem;
+
+}
+
+
+.project-description {
+
+    margin-top: 1.5rem;
+    line-height: 1.7;
+    color: var(--color-text-muted);
+
+}
+
+
+/* TAGS */
+
+.project-tags {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem;
+    margin: 2rem 0;
+
+}
+
+
+.tag {
+
+    padding: .5rem 1rem;
+
+    border-radius: 50px;
+
+    background:
+    rgba(255,255,255,.05);
+
+    border:
+    1px solid rgba(255,255,255,.1);
+
+}
+
+
+
+/* GLASS CARD */
+
+
+.glass-card {
+
+    background:
+    rgba(255,255,255,.04);
+
+    border:
+    1px solid rgba(255,255,255,.1);
+
+    backdrop-filter:
+    blur(20px);
+
+    border-radius:
+    20px;
+
+    padding:
+    2rem;
+
+}
+
+
+/* SECTIONS */
+
+
+.project-section {
+
+    margin-top: 5rem;
+
+}
+
+
+/* GRIDS */
+
+
+.objectives-grid,
+.vm-grid,
+.network-grid,
+.services-grid {
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:1.5rem;
+
+}
+
+
+
+/* IMAGES */
+
+
+.project-hero__image img,
+.project-section img {
+
+    width:100%;
+
+    border-radius:20px;
+
+}
+
+
+
+/* GALLERY */
+
+
+.gallery-grid {
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:1rem;
+
+}
+
+
+.gallery-grid img {
+
+    width:100%;
+    border-radius:20px;
+
+}
+
+
+
+/* MOBILE */
+
+
+@media(max-width:800px){
+
+    .project-hero{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .project-title{
+
+        font-size:2.5rem;
+
+    }
+
+}
