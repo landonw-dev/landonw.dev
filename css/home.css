@@ -388,6 +388,32 @@
    overflow: hidden;
 }
 
+.project-explore {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+
+    margin-top: 1rem;
+
+    color: var(--color-accent);
+    font-weight: 600;
+    text-decoration: none;
+
+    transition: all .25s ease;
+}
+
+.project-explore span {
+    transition: transform .25s ease;
+}
+
+.project-explore:hover {
+    color: white;
+}
+
+.project-explore:hover span {
+    transform: translateX(4px);
+}
+
 /* ---------- 5. Skills Section ---------- */
 .skills-grid {
   display: grid;
