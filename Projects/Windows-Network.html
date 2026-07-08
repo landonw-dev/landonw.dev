@@ -94,250 +94,151 @@
 
     <section class="section project-hero">
 
-      <div class="container">
+  <div class="container">
+
+    <div class="project-hero__grid">
 
 
-        <div class="project-hero-card reveal">
+      <!-- ================= HERO CONTENT ================= -->
+
+      <div class="project-hero__content reveal">
 
 
-          <div class="project-hero-content">
+        <span class="eyebrow">
+          Windows Server Infrastructure
+        </span>
 
 
-            <span class="eyebrow">
-              Infrastructure Project
+        <h1 class="project-title">
+          Enterprise Active Directory Lab
+        </h1>
+
+
+        <p class="project-description">
+
+          Designed and deployed an enterprise-style Windows Server
+          environment using VMware. Configured Active Directory,
+          DNS, DHCP, File Services, Print Services, and Windows
+          clients within an isolated network.
+
+        </p>
+
+
+
+        <div class="project-card__tags">
+
+          <span class="tag">VMware</span>
+          <span class="tag">Windows Server 2022</span>
+          <span class="tag">Active Directory</span>
+          <span class="tag">DNS</span>
+          <span class="tag">DHCP</span>
+
+        </div>
+
+
+
+        <div class="hero__actions">
+
+          <a class="btn btn-primary" href="#">
+            View Documentation
+          </a>
+
+
+          <a class="btn btn-secondary" href="#">
+            GitHub
+          </a>
+
+
+        </div>
+
+
+      </div>
+
+
+
+      <!-- ================= NETWORK DIAGRAM ================= -->
+
+      <div class="project-hero__visual reveal">
+
+
+        <div class="network-diagram-card">
+
+
+          <div class="network-node router">
+
+            Router / Gateway
+
+            <span>
+              192.168.10.1
             </span>
 
-
-            <h1>
-              Enterprise Active Directory Lab
-            </h1>
-
-
-            <p>
-
-              Designed and deployed a complete Windows Server
-              environment from scratch using VMware. This project
-              simulates a small business network featuring Active
-              Directory, DNS, DHCP, File Services, Print Services,
-              and domain-connected clients.
-
-            </p>
-
-
-
-            <div class="project-card__tags">
-
-              <span class="tag">
-                VMware
-              </span>
-
-              <span class="tag">
-                Windows Server 2022
-              </span>
-
-              <span class="tag">
-                Active Directory
-              </span>
-
-              <span class="tag">
-                DNS
-              </span>
-
-              <span class="tag">
-                DHCP
-              </span>
-
-              <span class="tag">
-                File Services
-              </span>
-
-            </div>
-
-
-
-            <div class="hero__actions">
-
-              <a class="btn btn-primary" href="#">
-                Documentation
-              </a>
-
-              <a class="btn btn-secondary" href="#">
-                GitHub
-              </a>
-
-            </div>
-
-
           </div>
 
 
 
+          <div class="network-connection"></div>
 
-          <div class="project-image">
 
-            <img 
-              src="../images/projects/network-diagram.png"
-              alt="Enterprise Active Directory network diagram"
-            />
 
-          </div>
+          <div class="network-node server">
 
+            LW-DC-01
 
-
-        </div>
-
-
-      </div>
-
-
-    </section>
-
-
-
-
-
-
-    <!-- ---------- Project Overview ---------- -->
-
-    <section class="section">
-
-      <div class="container">
-
-
-        <div class="section-head reveal">
-
-          <span class="eyebrow">
-            Project Overview
-          </span>
-
-
-          <h2 class="section-head__title">
-            Building a Small Enterprise Environment
-          </h2>
-
-        </div>
-
-
-
-
-        <div class="project-content-card reveal">
-
-
-          <p>
-
-            The goal of this lab was to gain practical experience
-            designing and managing enterprise infrastructure. I
-            created a virtual network environment using VMware and
-            deployed Windows Server roles commonly found in small
-            and medium business environments.
-
-          </p>
-
-
-          <p>
-
-            The environment includes centralized authentication,
-            network services, resource sharing, and Windows client
-            management through Active Directory.
-
-          </p>
-
-
-        </div>
-
-
-      </div>
-
-    </section>
-
-
-
-
-
-
-
-    <!-- ---------- Lab Environment ---------- -->
-
-    <section class="section">
-
-      <div class="container">
-
-
-        <div class="section-head">
-
-          <span class="eyebrow">
-            Lab Environment
-          </span>
-
-
-          <h2 class="section-head__title">
-            Virtual Infrastructure
-          </h2>
-
-        </div>
-
-
-
-        <div class="project-grid">
-
-
-
-          <div class="project-info-card">
-
-            <h3>
-              Virtual Platform
-            </h3>
-
-            <p>
-              VMware vCenter
-            </p>
-
-          </div>
-
-
-
-
-          <div class="project-info-card">
-
-            <h3>
-              Operating Systems
-            </h3>
-
-            <p>
-              Windows Server 2022
+            <span>
+              Domain Controller
               <br>
-              Windows 10 Clients
-            </p>
+              AD / DNS / DHCP
+              <br>
+              192.168.10.2
+            </span>
 
           </div>
 
 
 
-
-          <div class="project-info-card">
-
-            <h3>
-              Network Type
-            </h3>
-
-            <p>
-              Internal Virtual Network
-            </p>
-
-          </div>
+          <div class="network-branches">
 
 
+            <div class="network-node">
+
+              LW-SRV01
+
+              <span>
+                File + Print Server
+                <br>
+                192.168.10.3
+              </span>
+
+            </div>
 
 
-          <div class="project-info-card">
 
-            <h3>
-              Domain
-            </h3>
+            <div class="network-node">
 
-            <p>
-              WIN.LOCAL
-            </p>
+              LW-DSKTP-IT
+
+              <span>
+                IT Workstation
+                <br>
+                Windows 10
+              </span>
+
+            </div>
+
+
+
+            <div class="network-node">
+
+              LW-DSKTP-01
+
+              <span>
+                Standard Client
+                <br>
+                Windows 10
+              </span>
+
+            </div>
+
 
           </div>
 
@@ -348,71 +249,11 @@
       </div>
 
 
-    </section>
+    </div>
 
+  </div>
 
-
-
-
-
-    <!-- ---------- Network Design ---------- -->
-
-    <section class="section">
-
-      <div class="container">
-
-
-        <div class="section-head">
-
-          <span class="eyebrow">
-            Architecture
-          </span>
-
-
-          <h2 class="section-head__title">
-            Network Design
-          </h2>
-
-        </div>
-
-
-
-        <div class="project-content-card">
-
-
-          <h3>
-            Network Configuration
-          </h3>
-
-
-
-          <ul class="project-list">
-
-            <li>
-              Subnet: 192.168.10.0/24
-            </li>
-
-            <li>
-              Default Gateway: 192.168.10.1
-            </li>
-
-            <li>
-              Domain Controller / DNS: 192.168.10.2
-            </li>
-
-            <li>
-              DHCP Scope: 192.168.10.11 - 192.168.10.254
-            </li>
-
-          </ul>
-
-
-        </div>
-
-
-      </div>
-
-    </section>
+</section>
   </main>
   
   <!-- ================= Scripts ================= -->
