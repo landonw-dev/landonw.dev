@@ -302,6 +302,83 @@
 
 }
 
+.project-hero__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
+  align-items: center;
+}
+
+
+.network-diagram-card {
+  padding: 2rem;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+}
+
+
+.network-node {
+
+  padding: 1rem;
+  text-align: center;
+
+  border-radius: 12px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,.08),
+      rgba(255,255,255,.02)
+    );
+
+  border: 1px solid rgba(255,255,255,.15);
+
+  box-shadow:
+    0 0 20px rgba(0,150,255,.15);
+
+}
+
+
+.network-node span {
+
+  display:block;
+
+  margin-top:.5rem;
+
+  font-size:.8rem;
+
+  opacity:.7;
+
+}
+
+
+.network-connection {
+
+  height:40px;
+
+  width:2px;
+
+  background:rgba(255,255,255,.25);
+
+  margin:auto;
+
+}
+
+
+.network-branches {
+
+  display:grid;
+
+  grid-template-columns:repeat(3,1fr);
+
+  gap:1rem;
+
+  margin-top:2rem;
+
+}
+
 
 
 @media(max-width:900px){
