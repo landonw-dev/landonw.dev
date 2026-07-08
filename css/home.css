@@ -394,6 +394,7 @@
   grid-template-columns: repeat(4, 1fr);
   gap: var(--space-3);
   width: 100%;
+  height: 75%;
 }
 
 .skill-card {
@@ -412,13 +413,13 @@
 
 .skill-card__title {
   font-family: var(--font-mono);
-  font-size: var(--fs-sm);
+  font-size: 20px;
   margin-bottom: var(--space-2);
 }
 
 .skill-card__list {
   color: var(--color-text-secondary);
-  font-size: var(--fs-sm);
+  font-size: 18px;
   display: flex;
   flex-direction: column;
   gap: 4px;
