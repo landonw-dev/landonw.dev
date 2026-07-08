@@ -2,18 +2,26 @@
 <html lang="en">
 
 <head>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Enterprise Active Directory Lab — landonw.dev</title>
 
-  <meta name="description" content="Enterprise Active Directory Lab built using VMware, Windows Server 2022, Active Directory, DNS, DHCP, File Services, and Print Services." />
+  <meta 
+    name="description" 
+    content="Enterprise Active Directory Lab built using VMware, Windows Server 2022, Active Directory, DNS, DHCP, File Services, and Print Services."
+  />
+
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" 
+    rel="stylesheet" 
+  />
 
 
   <!-- Styles -->
@@ -39,16 +47,20 @@
   <nav class="navbar">
 
     <a href="../index.html" class="navbar__brand">
+
       <span class="navbar__logo">
         landonw.dev
       </span>
+
     </a>
 
 
     <button class="navbar__toggle" aria-label="Toggle navigation menu">
+
       <span></span>
       <span></span>
       <span></span>
+
     </button>
 
 
@@ -60,20 +72,17 @@
         </a>
       </li>
 
-
       <li>
         <a class="navbar__link" href="../index.html#about">
           About
         </a>
       </li>
 
-
       <li>
         <a class="navbar__link is-active" href="../index.html#projects">
           Portfolio
         </a>
       </li>
-
 
       <li>
         <a class="navbar__link" href="../index.html#contact">
@@ -88,201 +97,332 @@
 
 
 
+
   <!-- ================= Project Page ================= -->
 
+  <main class="project-page">
 
- <main class="project-page">
 
+    <!-- ---------- Hero ---------- -->
 
-<section class="section project-hero">
+    <section class="section project-hero">
 
-<div class="container">
+      <div class="container">
 
-<div class="project-hero-card reveal">
 
+        <div class="project-hero-card reveal">
 
-<div class="project-hero-content">
 
-<span class="eyebrow">
-Infrastructure Project
-</span>
+          <div class="project-hero-content">
 
 
-<h1>
-Enterprise Active Directory Lab
-</h1>
+            <span class="eyebrow">
+              Infrastructure Project
+            </span>
 
 
-<p>
-Built a complete Windows Server environment from scratch
-using VMware. Includes Active Directory, DNS, DHCP,
-File Services, Print Services, and domain joined clients.
-</p>
+            <h1>
+              Enterprise Active Directory Lab
+            </h1>
 
 
-<div class="project-card__tags">
+            <p>
 
-<span class="tag">
-VMware
-</span>
+              Designed and deployed a complete Windows Server
+              environment from scratch using VMware. This project
+              simulates a small business network featuring Active
+              Directory, DNS, DHCP, File Services, Print Services,
+              and domain-connected clients.
 
-<span class="tag">
-Windows Server
-</span>
+            </p>
 
-<span class="tag">
-Active Directory
-</span>
 
-<span class="tag">
-DNS
-</span>
 
-<span class="tag">
-DHCP
-</span>
+            <div class="project-card__tags">
 
-</div>
+              <span class="tag">
+                VMware
+              </span>
 
+              <span class="tag">
+                Windows Server 2022
+              </span>
 
-<div class="hero__actions">
+              <span class="tag">
+                Active Directory
+              </span>
 
-<a class="btn btn-primary">
-Documentation
-</a>
+              <span class="tag">
+                DNS
+              </span>
 
-<a class="btn btn-secondary">
-GitHub
-</a>
+              <span class="tag">
+                DHCP
+              </span>
 
-</div>
+              <span class="tag">
+                File Services
+              </span>
 
+            </div>
 
-</div>
 
 
+            <div class="hero__actions">
 
-<div class="project-image">
+              <a class="btn btn-primary" href="#">
+                Documentation
+              </a>
 
-<img src="../images/projects/network-diagram.png">
+              <a class="btn btn-secondary" href="#">
+                GitHub
+              </a>
 
-</div>
+            </div>
 
 
+          </div>
 
-</div>
 
-</div>
 
-</section>
 
+          <div class="project-image">
 
+            <img 
+              src="../images/projects/network-diagram.png"
+              alt="Enterprise Active Directory network diagram"
+            />
 
+          </div>
 
 
-<section class="section">
 
+        </div>
 
-<div class="container">
 
+      </div>
 
-<div class="section-head">
 
-<span class="eyebrow">
-Project Details
-</span>
+    </section>
 
-<h2 class="section-head__title">
-Infrastructure Overview
-</h2>
 
 
-</div>
 
 
 
-<div class="project-grid">
+    <!-- ---------- Project Overview ---------- -->
 
+    <section class="section">
 
-<div class="project-info-card">
+      <div class="container">
 
-<h3>
-Network
-</h3>
 
-<p>
-192.168.10.0/24
-</p>
+        <div class="section-head reveal">
 
-</div>
+          <span class="eyebrow">
+            Project Overview
+          </span>
 
 
+          <h2 class="section-head__title">
+            Building a Small Enterprise Environment
+          </h2>
 
-<div class="project-info-card">
+        </div>
 
-<h3>
-Domain
-</h3>
 
-<p>
-WIN.LOCAL
-</p>
 
-</div>
 
+        <div class="project-content-card reveal">
 
 
-<div class="project-info-card">
+          <p>
 
-<h3>
-Platform
-</h3>
+            The goal of this lab was to gain practical experience
+            designing and managing enterprise infrastructure. I
+            created a virtual network environment using VMware and
+            deployed Windows Server roles commonly found in small
+            and medium business environments.
 
-<p>
-VMware
-</p>
+          </p>
 
-</div>
 
+          <p>
 
+            The environment includes centralized authentication,
+            network services, resource sharing, and Windows client
+            management through Active Directory.
 
-<div class="project-info-card">
+          </p>
 
-<h3>
-Servers
-</h3>
 
-<p>
-Windows Server 2022
-</p>
+        </div>
 
-</div>
 
+      </div>
 
-</div>
+    </section>
 
 
-</div>
 
 
-</section>
 
 
 
-</main>
+    <!-- ---------- Lab Environment ---------- -->
 
+    <section class="section">
 
+      <div class="container">
 
 
+        <div class="section-head">
 
-  <!-- ================= Scripts ================= -->
+          <span class="eyebrow">
+            Lab Environment
+          </span>
 
-  <script src="../js/particles.js"></script>
-  <script src="../js/typing.js"></script>
-  <script src="../js/scroll.js"></script>
-  <script src="../js/main.js"></script>
 
+          <h2 class="section-head__title">
+            Virtual Infrastructure
+          </h2>
 
-</body>
+        </div>
 
-</html>
+
+
+        <div class="project-grid">
+
+
+
+          <div class="project-info-card">
+
+            <h3>
+              Virtual Platform
+            </h3>
+
+            <p>
+              VMware vCenter
+            </p>
+
+          </div>
+
+
+
+
+          <div class="project-info-card">
+
+            <h3>
+              Operating Systems
+            </h3>
+
+            <p>
+              Windows Server 2022
+              <br>
+              Windows 10 Clients
+            </p>
+
+          </div>
+
+
+
+
+          <div class="project-info-card">
+
+            <h3>
+              Network Type
+            </h3>
+
+            <p>
+              Internal Virtual Network
+            </p>
+
+          </div>
+
+
+
+
+          <div class="project-info-card">
+
+            <h3>
+              Domain
+            </h3>
+
+            <p>
+              WIN.LOCAL
+            </p>
+
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+
+    </section>
+
+
+
+
+
+
+    <!-- ---------- Network Design ---------- -->
+
+    <section class="section">
+
+      <div class="container">
+
+
+        <div class="section-head">
+
+          <span class="eyebrow">
+            Architecture
+          </span>
+
+
+          <h2 class="section-head__title">
+            Network Design
+          </h2>
+
+        </div>
+
+
+
+        <div class="project-content-card">
+
+
+          <h3>
+            Network Configuration
+          </h3>
+
+
+
+          <ul class="project-list">
+
+            <li>
+              Subnet: 192.168.10.0/24
+            </li>
+
+            <li>
+              Default Gateway: 192.168.10.1
+            </li>
+
+            <li>
+              Domain Controller / DNS: 192.168.10.2
+            </li>
+
+            <li>
+              DHCP Scope: 192.168.10.11 - 192.168.10.254
+            </li>
+
+          </ul>
+
+
+        </div>
+
+
+      </div>
+
+    </section>
