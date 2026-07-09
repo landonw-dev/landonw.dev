@@ -1,37 +1,58 @@
 /* ==========================================================
-   PROJECT PAGE CSS
-   Portfolio Project Pages
-   ========================================================== */
+   PROJECT PAGE
+   Chrissy Rae's Cookies Website
+========================================================== */
 
 
-/* ---------- Main Page ---------- */
+/* ---------- Base Layout ---------- */
 
 .project-page {
-    width:100%;
+
+    width: min(1200px, 90%);
+
+    margin: 0 auto;
+
+    padding-top: 90px;
+
     overflow:hidden;
+
 }
 
 
-/* ---------- Hero Section ---------- */
+.project-page .section {
+
+    min-height:auto;
+
+    padding:3.5rem 0;
+
+}
+
+
+
+/* ==========================================================
+   HERO SECTION
+========================================================== */
+
 
 .project-hero-card {
 
-    padding:50px;
-
-    border-radius:24px;
-
     background:
-    rgba(255,255,255,0.04);
+        rgba(255,255,255,.04);
 
     border:
-    1px solid rgba(255,255,255,0.10);
+        1px solid rgba(255,255,255,.12);
 
-    backdrop-filter:blur(16px);
+    backdrop-filter:
+        blur(20px);
 
-    box-shadow:
-    0 20px 50px rgba(0,0,0,.25);
+    border-radius:
+        24px;
+
+    padding:
+        2.25rem;
 
 }
+
 
 
 .project-hero__grid {
@@ -39,9 +60,10 @@
     display:grid;
 
     grid-template-columns:
-    1fr .8fr;
+        1fr 1fr;
 
-    gap:45px;
+    gap:
+        3rem;
 
     align-items:center;
 
@@ -49,17 +71,19 @@
 
 
 
-/* ---------- Hero Text ---------- */
+/* Hero Typography */
 
 
 .hero__title {
 
-    margin:20px 0;
-
     font-size:
-    clamp(2.5rem,5vw,4rem);
+        clamp(2.5rem,5vw,4rem);
 
-    line-height:1.1;
+    line-height:
+        1.1;
+
+    margin-top:
+        1rem;
 
 }
 
@@ -70,7 +94,7 @@
     display:block;
 
     color:
-    var(--color-accent);
+        var(--color-text-secondary);
 
 }
 
@@ -78,18 +102,25 @@
 
 .hero__desc {
 
-    max-width:650px;
+    margin-top:
+        1.25rem;
 
-    line-height:1.8;
+    max-width:
+        600px;
+
+    line-height:
+        1.7;
 
     color:
-    var(--color-muted);
+        var(--color-text-muted);
 
 }
 
 
 
-/* ---------- Tags ---------- */
+/* ==========================================================
+   TAGS
+========================================================== */
 
 
 .project-card__tags {
@@ -98,9 +129,10 @@
 
     flex-wrap:wrap;
 
-    gap:10px;
+    gap:.65rem;
 
-    margin-top:25px;
+    margin:
+        1.5rem 0;
 
 }
 
@@ -108,112 +140,77 @@
 
 .tag {
 
+    display:inline-flex;
+
+    align-items:center;
+
     padding:
-    8px 16px;
+        .45rem .9rem;
 
-    border-radius:50px;
-
-    font-size:.85rem;
+    border-radius:
+        var(--radius-pill);
 
     font-family:
-    "JetBrains Mono",
-    monospace;
+        var(--font-mono);
+
+    font-size:
+        .75rem;
 
 
     background:
-    rgba(255,255,255,.05);
+        rgba(255,255,255,.05);
 
 
     border:
-    1px solid rgba(255,255,255,.12);
+        1px solid var(--color-border);
 
 
     color:
-    var(--color-text);
-
-}
-
-
-
-/* ---------- Buttons ---------- */
-
-
-.hero__actions {
-
-    display:flex;
-
-    gap:15px;
-
-    margin-top:30px;
-
-}
-
-
-.btn {
-
-    padding:
-    12px 26px;
-
-    border-radius:12px;
-
-    transition:.3s ease;
-
-}
-
-
-
-.btn-primary {
-
-    background:
-    var(--color-accent);
-
-    color:
-    #0b0f14;
-
-}
-
-
-
-.btn-secondary {
-
-    border:
-    1px solid rgba(255,255,255,.2);
-
-    color:
-    var(--color-text);
-
-}
-
-
-
-.btn:hover {
-
-    transform:
-    translateY(-3px);
+        var(--color-text-secondary);
 
 }
 
 
 
 /* ==========================================================
-   Website Preview
-   ========================================================== */
+   WEBSITE MOCKUP
+========================================================== */
+
+
+.website-preview-card {
+
+
+    display:flex;
+
+    justify-content:center;
+
+
+}
+
 
 
 .browser {
 
+
+    width:100%;
+
+    max-width:430px;
+
+
     overflow:hidden;
 
-    border-radius:18px;
+
+    border-radius:
+        20px;
+
 
     background:
-    #11161d;
+        rgba(255,255,255,.03);
+
 
     border:
-    1px solid rgba(255,255,255,.12);
+        1px solid var(--color-border-strong);
 
-    box-shadow:
-    0 20px 40px rgba(0,0,0,.35);
 
 }
 
@@ -221,16 +218,21 @@
 
 .browser-top {
 
+
     display:flex;
 
     align-items:center;
 
-    gap:15px;
+    gap:1rem;
 
-    padding:12px 15px;
+
+    padding:
+        .75rem 1rem;
+
 
     background:
-    #151a22;
+        rgba(255,255,255,.04);
+
 
 }
 
@@ -240,7 +242,7 @@
 
     display:flex;
 
-    gap:7px;
+    gap:.4rem;
 
 }
 
@@ -248,14 +250,16 @@
 
 .browser-buttons span {
 
+
     width:10px;
 
     height:10px;
 
     border-radius:50%;
 
+
     background:
-    #667085;
+        var(--color-text-muted);
 
 }
 
@@ -263,14 +267,22 @@
 
 .browser-address {
 
+
     flex:1;
 
     text-align:center;
 
-    font-size:.75rem;
+
+    font-family:
+        var(--font-mono);
+
+
+    font-size:
+        .7rem;
+
 
     color:
-    var(--color-muted);
+        var(--color-text-muted);
 
 }
 
@@ -278,34 +290,30 @@
 
 .browser-content {
 
-    padding:25px;
+    padding:
+        1.5rem;
 
 }
 
-
-
-/* Website Mockup */
 
 
 .website-banner {
 
-    padding:25px;
+
+    padding:
+        1.5rem;
+
 
     text-align:center;
 
-    border-radius:15px;
+
+    border-radius:
+        16px;
+
 
     background:
-    rgba(255,255,255,.08);
+        rgba(255,255,255,.06);
 
-}
-
-
-
-.website-banner h2 {
-
-    color:
-    var(--color-text);
 
 }
 
@@ -313,8 +321,9 @@
 
 .website-banner p {
 
+
     color:
-    var(--color-muted);
+        var(--color-text-secondary);
 
 }
 
@@ -322,15 +331,29 @@
 
 .website-nav {
 
+
     display:flex;
 
     justify-content:center;
 
-    gap:15px;
+    gap:
+        1rem;
 
-    margin:20px 0;
 
-    font-size:.75rem;
+    margin:
+        1rem 0;
+
+
+    font-size:
+        .75rem;
+
+
+    font-family:
+        var(--font-mono);
+
+
+    color:
+        var(--color-text-muted);
 
 }
 
@@ -338,20 +361,29 @@
 
 .website-preview-image {
 
+
     height:120px;
+
 
     display:flex;
 
-    justify-content:center;
 
     align-items:center;
 
-    font-size:55px;
+    justify-content:center;
 
-    border-radius:15px;
+
+    font-size:
+        60px;
+
+
+    border-radius:
+        16px;
+
 
     background:
-    rgba(255,255,255,.05);
+        rgba(255,255,255,.04);
+
 
 }
 
@@ -359,14 +391,21 @@
 
 .website-sections {
 
+
     display:grid;
 
+
     grid-template-columns:
-    repeat(2,1fr);
+        repeat(2,1fr);
 
-    gap:12px;
 
-    margin-top:20px;
+    gap:
+        .75rem;
+
+
+    margin-top:
+        1rem;
+
 
 }
 
@@ -374,35 +413,52 @@
 
 .mini-card {
 
-    padding:15px;
+
+    padding:
+        .9rem;
+
 
     text-align:center;
 
-    border-radius:12px;
+
+    border-radius:
+        12px;
+
 
     background:
-    rgba(255,255,255,.05);
+        rgba(255,255,255,.05);
+
 
     border:
-    1px solid rgba(255,255,255,.08);
+        1px solid var(--color-border);
+
+
+    font-size:
+        .8rem;
+
 
 }
 
 
 
 /* ==========================================================
-   Project Information Cards
-   ========================================================== */
+   PROJECT INFORMATION CARDS
+========================================================== */
 
 
 .project-grid {
 
+
     display:grid;
 
-    grid-template-columns:
-    repeat(auto-fit,minmax(240px,1fr));
 
-    gap:20px;
+    grid-template-columns:
+        repeat(auto-fit,minmax(240px,1fr));
+
+
+    gap:
+        1rem;
+
 
 }
 
@@ -410,17 +466,26 @@
 
 .project-info-card {
 
-    padding:28px;
 
-    border-radius:20px;
+    padding:
+        1.5rem;
+
+
+    border-radius:
+        18px;
+
 
     background:
-    rgba(255,255,255,.04);
+        rgba(255,255,255,.04);
+
 
     border:
-    1px solid rgba(255,255,255,.10);
+        1px solid var(--color-border);
 
-    transition:.3s ease;
+
+    transition:
+        .25s ease;
+
 
 }
 
@@ -428,11 +493,14 @@
 
 .project-info-card:hover {
 
+
     transform:
-    translateY(-5px);
+        translateY(-5px);
+
 
     border-color:
-    var(--color-accent);
+        var(--color-border-strong);
+
 
 }
 
@@ -440,7 +508,14 @@
 
 .project-info-card h3 {
 
-    margin-bottom:15px;
+
+    font-size:
+        1rem;
+
+
+    margin-bottom:
+        .75rem;
+
 
 }
 
@@ -448,35 +523,45 @@
 
 .project-info-card p {
 
-    color:
-    var(--color-muted);
 
-    line-height:1.7;
+    color:
+        var(--color-text-secondary);
+
+
+    line-height:
+        1.6;
+
 
 }
 
 
 
 /* ==========================================================
-   Terminal Cards
-   ========================================================== */
+   TERMINAL SECTIONS
+========================================================== */
 
 
 .terminal-card {
 
-    padding:35px;
 
-    overflow-x:auto;
+    padding:
+        1.75rem;
 
-    border-radius:20px;
+
+    border-radius:
+        20px;
 
 
     background:
-    #0b0f14;
+        rgba(0,0,0,.35);
 
 
     border:
-    1px solid rgba(255,255,255,.08);
+        1px solid var(--color-border);
+
+
+    overflow-x:auto;
+
 
 }
 
@@ -484,34 +569,49 @@
 
 .terminal-card pre {
 
-    margin:0;
+
+    margin:
+        0;
+
 
     font-family:
-    "JetBrains Mono",
-    monospace;
+        var(--font-mono);
+
+
+    font-size:
+        .85rem;
+
+
+    line-height:
+        1.7;
+
 
     color:
-    #9cdcfe;
+        var(--color-text-secondary);
 
-    line-height:1.7;
 
 }
 
 
 
 /* ==========================================================
-   Technology Grid
-   ========================================================== */
+   TECHNOLOGY GRID
+========================================================== */
 
 
 .services-grid {
 
+
     display:grid;
 
-    grid-template-columns:
-    repeat(auto-fit,minmax(220px,1fr));
 
-    gap:15px;
+    grid-template-columns:
+        repeat(auto-fit,minmax(220px,1fr));
+
+
+    gap:
+        1rem;
+
 
 }
 
@@ -519,49 +619,65 @@
 
 .services-grid div {
 
-    padding:18px;
 
-    border-radius:15px;
+    padding:
+        1.25rem;
+
+
+    border-radius:
+        16px;
 
 
     background:
-    rgba(255,255,255,.04);
+        rgba(255,255,255,.04);
 
 
     border:
-    1px solid rgba(255,255,255,.1);
-
-    transition:.3s ease;
-
-}
+        1px solid var(--color-border);
 
 
+    color:
+        var(--color-text-secondary);
 
-.services-grid div:hover {
-
-    border-color:
-    var(--color-accent);
 
 }
 
 
 
 /* ==========================================================
-   Large Content Sections
-   ========================================================== */
+   LARGE CONTENT CARDS
+========================================================== */
 
 
 .project-content-card {
 
-    padding:40px;
 
-    border-radius:22px;
+    padding:
+        2rem;
+
+
+    border-radius:
+        20px;
+
 
     background:
-    rgba(255,255,255,.04);
+        rgba(255,255,255,.04);
+
 
     border:
-    1px solid rgba(255,255,255,.10);
+        1px solid var(--color-border);
+
+
+}
+
+
+
+.project-content-card h2 {
+
+
+    margin-top:
+        .75rem;
+
 
 }
 
@@ -569,18 +685,26 @@
 
 .project-content-card p {
 
-    line-height:1.8;
+
+    margin-top:
+        1rem;
+
+
+    line-height:
+        1.7;
+
 
     color:
-    var(--color-muted);
+        var(--color-text-muted);
+
 
 }
 
 
 
 /* ==========================================================
-   Responsive
-   ========================================================== */
+   RESPONSIVE
+========================================================== */
 
 
 @media(max-width:900px){
@@ -588,16 +712,21 @@
 
 .project-hero__grid {
 
+
     grid-template-columns:
-    1fr;
+        1fr;
+
 
 }
 
 
 
-.project-hero-card {
+.website-preview-card {
 
-    padding:30px;
+
+    margin-top:
+        1rem;
+
 
 }
 
@@ -609,26 +738,34 @@
 @media(max-width:600px){
 
 
-.project-content-card,
-.terminal-card {
+.project-page {
 
-    padding:25px;
+
+    width:
+        92%;
+
 
 }
 
 
 
-.hero__actions {
+.project-hero-card {
 
-    flex-direction:column;
+
+    padding:
+        1.5rem;
+
 
 }
+
 
 
 .project-grid {
 
+
     grid-template-columns:
-    1fr;
+        1fr;
+
 
 }
 
