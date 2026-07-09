@@ -1,0 +1,736 @@
+ /* ==========================================================
+   PORTFOLIO WEBSITE PROJECT
+   Additional Components
+========================================================== */
+
+
+/* ==========================================================
+   BROWSER MOCKUP HERO
+========================================================== */
+
+
+.browser-window {
+
+    width: 100%;
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    background:
+        rgba(255,255,255,.04);
+
+    border:
+        1px solid rgba(255,255,255,.15);
+
+    backdrop-filter:
+        blur(18px);
+
+    box-shadow:
+        0 30px 80px rgba(0,0,0,.45);
+
+    transform:
+        perspective(1000px)
+        rotateY(-5deg);
+
+    transition:
+        transform .5s ease;
+
+}
+
+
+.browser-window:hover {
+
+    transform:
+        perspective(1000px)
+        rotateY(0deg)
+        translateY(-8px);
+
+}
+
+
+
+
+
+.browser-toolbar {
+
+    height:
+        42px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        1rem;
+
+    padding:
+        0 1rem;
+
+    border-bottom:
+        1px solid rgba(255,255,255,.1);
+
+    background:
+        rgba(0,0,0,.25);
+
+}
+
+
+
+
+.browser-buttons {
+
+    display:
+        flex;
+
+    gap:
+        .4rem;
+
+}
+
+
+
+.browser-buttons span {
+
+    width:
+        10px;
+
+    height:
+        10px;
+
+    border-radius:
+        50%;
+
+}
+
+
+
+.browser-buttons .red {
+
+    background:
+        rgba(255,255,255,.4);
+
+}
+
+
+
+.browser-buttons .yellow {
+
+    background:
+        rgba(255,255,255,.25);
+
+}
+
+
+
+.browser-buttons .green {
+
+    background:
+        rgba(255,255,255,.15);
+
+}
+
+
+
+
+
+.browser-address {
+
+    flex:
+        1;
+
+    text-align:
+        center;
+
+    font-family:
+        var(--font-mono);
+
+    font-size:
+        .7rem;
+
+    color:
+        var(--color-text-muted);
+
+}
+
+
+
+
+.browser-body {
+
+    padding:
+        1.5rem;
+
+    min-height:
+        350px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.04),
+            rgba(0,0,0,.15)
+        );
+
+}
+
+
+
+
+
+.browser-navbar {
+
+    display:
+        flex;
+
+    gap:
+        .75rem;
+
+    margin-bottom:
+        2rem;
+
+}
+
+
+
+.browser-navbar div {
+
+    height:
+        8px;
+
+    width:
+        60px;
+
+    border-radius:
+        10px;
+
+    background:
+        rgba(255,255,255,.15);
+
+}
+
+
+
+.browser-hero {
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    gap:
+        1rem;
+
+}
+
+
+
+.browser-title {
+
+    width:
+        75%;
+
+    height:
+        28px;
+
+    border-radius:
+        8px;
+
+    background:
+        rgba(255,255,255,.18);
+
+}
+
+
+
+.browser-subtitle {
+
+    width:
+        90%;
+
+    height:
+        12px;
+
+    border-radius:
+        8px;
+
+    background:
+        rgba(255,255,255,.08);
+
+}
+
+
+
+.browser-button {
+
+    width:
+        120px;
+
+    height:
+        35px;
+
+    border-radius:
+        999px;
+
+    margin-top:
+        1rem;
+
+    background:
+        rgba(255,255,255,.15);
+
+}
+
+
+
+
+
+.browser-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:
+        1rem;
+
+    margin-top:
+        2.5rem;
+
+}
+
+
+
+.browser-grid div {
+
+    height:
+        80px;
+
+    border-radius:
+        12px;
+
+    background:
+        rgba(255,255,255,.06);
+
+    border:
+        1px solid rgba(255,255,255,.08);
+
+}
+
+
+
+
+
+
+/* ==========================================================
+   WORKFLOW TIMELINE
+========================================================== */
+
+
+.workflow {
+
+
+    position:
+        relative;
+
+
+    display:
+        grid;
+
+
+    grid-template-columns:
+        repeat(5,1fr);
+
+
+    gap:
+        1rem;
+
+
+}
+
+
+
+.workflow::before {
+
+
+    content:"";
+
+
+    position:
+        absolute;
+
+
+    top:
+        35px;
+
+
+    left:
+        8%;
+
+
+    right:
+        8%;
+
+
+    height:
+        1px;
+
+
+    background:
+        rgba(255,255,255,.15);
+
+
+}
+
+
+
+.workflow-step {
+
+
+    position:
+        relative;
+
+
+    padding:
+        1.5rem;
+
+
+    border-radius:
+        18px;
+
+
+    background:
+        rgba(255,255,255,.04);
+
+
+    border:
+        1px solid rgba(255,255,255,.1);
+
+
+    text-align:
+        center;
+
+
+    z-index:
+        1;
+
+
+}
+
+
+
+.workflow-step span {
+
+
+    display:
+        inline-flex;
+
+
+    align-items:
+        center;
+
+
+    justify-content:
+        center;
+
+
+    width:
+        42px;
+
+
+    height:
+        42px;
+
+
+    border-radius:
+        50%;
+
+
+    margin-bottom:
+        1rem;
+
+
+    background:
+        rgba(255,255,255,.08);
+
+
+    border:
+        1px solid rgba(255,255,255,.15);
+
+
+    font-family:
+        var(--font-mono);
+
+
+}
+
+
+
+.workflow-step h3 {
+
+
+    margin-bottom:
+        .75rem;
+
+
+    font-size:
+        1.1rem;
+
+
+}
+
+
+
+.workflow-step p {
+
+
+    color:
+        var(--color-text-muted);
+
+
+    font-size:
+        .9rem;
+
+
+}
+
+
+
+
+
+
+
+/* ==========================================================
+   PROJECT CONTENT IMPROVEMENTS
+========================================================== */
+
+
+.project-content-card {
+
+
+    transition:
+        transform .3s ease,
+        border-color .3s ease;
+
+
+}
+
+
+
+.project-content-card:hover {
+
+
+    transform:
+        translateY(-5px);
+
+
+    border-color:
+        rgba(255,255,255,.2);
+
+
+}
+
+
+
+
+
+
+/* ==========================================================
+   FEATURE GRID
+========================================================== */
+
+
+.services-grid div {
+
+
+    transition:
+        transform .25s ease,
+        border-color .25s ease;
+
+
+}
+
+
+
+.services-grid div:hover {
+
+
+    transform:
+        translateY(-5px);
+
+
+    border-color:
+        rgba(255,255,255,.25);
+
+
+}
+
+
+
+
+
+
+
+/* ==========================================================
+   STAT IMPROVEMENTS
+========================================================== */
+
+
+.stat-card {
+
+
+    transition:
+        transform .3s ease;
+
+
+}
+
+
+
+.stat-card:hover {
+
+
+    transform:
+        translateY(-6px);
+
+
+}
+
+
+
+.stat-card h3 {
+
+
+    font-size:
+        2.5rem;
+
+
+    background:
+        linear-gradient(
+            90deg,
+            #ffffff,
+            #888888
+        );
+
+
+    -webkit-background-clip:
+        text;
+
+
+    -webkit-text-fill-color:
+        transparent;
+
+
+}
+
+
+
+
+
+
+/* ==========================================================
+   RESPONSIVE DESIGN
+========================================================== */
+
+
+@media(max-width:1100px){
+
+
+    .workflow {
+
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+
+    }
+
+
+    .workflow::before {
+
+
+        display:
+            none;
+
+
+    }
+
+
+}
+
+
+
+@media(max-width:900px){
+
+
+    .browser-window {
+
+
+        transform:
+            none;
+
+
+    }
+
+
+
+    .browser-window:hover {
+
+
+        transform:
+            translateY(-5px);
+
+
+    }
+
+
+
+    .browser-grid {
+
+
+        grid-template-columns:
+            1fr;
+
+
+    }
+
+
+
+}
+
+
+
+
+@media(max-width:600px){
+
+
+    .workflow {
+
+
+        grid-template-columns:
+            1fr;
+
+
+    }
+
+
+
+    .browser-body {
+
+
+        min-height:
+            250px;
+
+
+        padding:
+            1rem;
+
+
+    }
+
+
+
+}
