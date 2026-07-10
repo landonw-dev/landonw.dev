@@ -8,8 +8,8 @@
   position: relative;
   z-index: 1;
   height: 100vh;
-  overflow-y: auto;
-  scroll-snap-type: y proximity;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
 }
   /* JS drives the actual section-by-section transitions; native snap is a
      graceful fallback for touch / reduced-motion users. */
