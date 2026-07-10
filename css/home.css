@@ -706,10 +706,9 @@
 }
 
 .contact {
-  min-height: auto;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
   align-items: flex-start;
+  padding-top: calc(var(--nav-height) + var(--space-6));
+  padding-bottom: var(--space-6);
 }
 
 
