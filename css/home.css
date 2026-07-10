@@ -8,8 +8,9 @@
   position: relative;
   z-index: 1;
   height: 100vh;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
+  overflow-y: auto;
+  scroll-snap-type: y proximity;
+}
   /* JS drives the actual section-by-section transitions; native snap is a
      graceful fallback for touch / reduced-motion users. */
 }
@@ -706,9 +707,12 @@
 }
 
 .contact {
+  min-height: 100vh;
+  height: auto;
   align-items: flex-start;
+  scroll-snap-align: start;
   padding-top: calc(var(--nav-height) + var(--space-6));
-  padding-bottom: var(--space-6);
+  padding-bottom: calc(var(--space-6) * 2);
 }
 
 
