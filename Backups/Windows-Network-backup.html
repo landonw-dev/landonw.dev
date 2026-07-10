@@ -1,1 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>landonw.dev — Enterprise Active Directory Lab</title>
+
+<meta name="description" content="Enterprise Active Directory infrastructure lab built using VMware, Windows Server, DNS, DHCP, and Active Directory." />
+
+
+<!-- Fonts -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+
+<!-- Styles -->
+
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/home.css">
+<link rel="stylesheet" href="../css/animations.css">
+<link rel="stylesheet" href="../css/project.css">
+
+
+</head>
+
+
+<body>
+
+
+<!-- ================= BACKGROUND ================= -->
+
+<canvas id="grid-canvas"></canvas>
+<div class="grid-glow"></div>
+
+
+
+<!-- ================= NAVBAR ================= -->
+
+
+<nav class="navbar">
+
+<a href="../index.html" class="navbar__brand">
+
+<span class="navbar__logo">
+landonw.dev
+</span>
+
+</a>
+
+
+<ul class="navbar__links">
+
+<li>
+<a class="navbar__link" href="../index.html">
+Home
+</a>
+</li>
+
+
+<li>
+<a class="navbar__link" href="../index.html#about">
+About
+</a>
+</li>
+
+
+<li>
+<a class="navbar__link is-active" href="../index.html#projects">
+Portfolio
+</a>
+</li>
+
+
+<li>
+<a class="navbar__link" href="../index.html#contact">
+Contact
+</a>
+</li>
+
+
+</ul>
+
+</nav>
+
+
+
+
+<main class="project-page">
+
+
+
+<!-- ================= HERO ================= -->
+
+
+<section class="section">
+
+
+<div class="container">
+
+
+<div class="project-hero-card reveal">
+
+
+<div class="project-hero__grid">
+
+
+<div class="project-hero__content">
+
+
+<span class="eyebrow">
+Windows Server Infrastructure
+</span>
+
+
+<h1 class="hero__title">
+
+Enterprise
+<span>
+Active Directory Lab
+</span>
+
+</h1>
+
+
+
+<p class="hero__desc">
+
+Designed and deployed an enterprise-style Windows Server
+environment from scratch using VMware. This project
+simulates a small business network featuring Active
+Directory, DNS, DHCP, File Services, Print Services,
+and domain-connected Windows clients.
+
+</p>
+
+
+
+<div class="project-card__tags">
+
+<span class="tag">VMware</span>
+<span class="tag">Windows Server 2022</span>
+<span class="tag">Active Directory</span>
+<span class="tag">DNS</span>
+<span class="tag">DHCP</span>
+<span class="tag">File Services</span>
+
+</div>
+
+
+<!--
+<div class="hero__actions">
+
+<a class="btn btn-primary">
+Documentation
+</a>
+
+<a class="btn btn-secondary">
+GitHub
+</a>
+
+</div>
+-->
+
+
+</div>
+
+
+
+
+
+<!-- NETWORK DIAGRAM -->
+
+
+<div class="network-diagram-card">
+
+
+<div class="network-node">
+
+🌐 Router / Gateway
+
+<span>
+192.168.10.1
+</span>
+
+</div>
+
+
+<div class="network-line"></div>
+
+
+<div class="network-node server">
+
+🖥 LW-DC-01
+
+<span>
+Domain Controller
+<br>
+AD DS • DNS • DHCP
+<br>
+192.168.10.2
+</span>
+
+</div>
+
+
+
+<div class="network-branches">
+
+
+<div class="network-node">
+
+📁 LW-SRV01
+
+<span>
+File + Print Server
+<br>
+192.168.10.3
+</span>
+
+</div>
+
+
+
+<div class="network-node">
+
+💻 LW-DSKTP-IT
+
+<span>
+IT Workstation
+<br>
+Windows 10
+</span>
+
+</div>
+
+
+
+<div class="network-node">
+
+💻 LW-DSKTP-01
+
+<span>
+Standard Client
+<br>
+Windows 10
+</span>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- ================= PROJECT SUMMARY ================= -->
+
+
+<section class="section">
+
+
+<div class="container">
+
+
+<div class="section-head reveal">
+
+<span class="eyebrow">
+Project Overview
+</span>
+
+
+<h2 class="section-head__title">
+Building a Small Enterprise Environment
+</h2>
+
+
+</div>
+
+
+
+<div class="terminal-card">
+
+
+<pre>
+
+This project involved designing and deploying a small enterprise-style infrastructure environment from the 
+ground up using VMware virtualization. The goal was to simulate a real-world business network and gain 
+hands-on experience with core systems administration concepts.
+
+The environment was built around a Windows Server domain using Active Directory Domain Services, with 
+integrated DNS and DHCP services for centralized authentication and network management. Additional 
+servers and client machines were configured to replicate common workplace infrastructure, 
+including file sharing, print services, and domain-connected workstations.
+
+This project strengthened my understanding of network planning, server deployment, identity management,
+permissions, and the relationship between core enterprise services.
+
+
+</pre>
+
+
+</div>
+
+</section>
+
+
+
+
+
+
+<!-- ================= ENVIRONMENT ================= -->
+
+
+<section class="section">
+
+
+<div class="container">
+
+
+<div class="section-head">
+
+<span class="eyebrow">
+Lab Environment
+</span>
+
+
+<h2 class="section-head__title">
+Virtual Infrastructure
+</h2>
+
+
+</div>
+
+
+
+
+<div class="project-grid">
+
+<div class="project-info-card">
+    
+<h3>Virtual Machines</h3>
+<p>4</p>
+</div>
+
+
+<div class="project-info-card">
+    
+<h3>Infrastructure Services</h3>
+<p>5+</p>
+</div>
+
+
+<div class="project-info-card">
+    
+<h3>Domain</h3>
+<p>win.local</p>
+</div>
+
+
+<div class="project-info-card">
+    
+<h3>Network Subnet</h3>
+<p>/24</p>
+</div>
+    
+<div class="project-info-card">
+    
+<h3>
+Platform
+</h3>
+
+<p>
+VMware vCenter
+</p>
+
+</div>
+
+
+<div class="project-info-card">
+
+<h3>
+Operating Systems
+</h3>
+
+<p>
+Windows Server 2022
+<br>
+Windows 10 Clients
+</p>
+
+</div>
+
+
+
+<div class="project-info-card">
+
+<h3>
+Network Type
+</h3>
+
+<p>
+Internal Virtual Network
+</p>
+
+</div>
+
+
+
+<div class="project-info-card">
+
+<h3>
+Domain
+</h3>
+
+<p>
+WIN.LOCAL
+</p>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================= SERVER ROLES ================= -->
+
+
+<section class="section">
+
+
+<div class="container">
+
+
+<div class="section-head">
+
+<span class="eyebrow">
+Infrastructure Services
+</span>
+
+
+<h2 class="section-head__title">
+Server Roles
+</h2>
+
+
+</div>
+
+
+
+
+<div class="project-grid">
+
+
+<div class="project-info-card">
+
+<h3>
+LW-DC-01
+</h3>
+
+<p>
+
+Domain Controller
+
+<br><br>
+
+Active Directory
+<br>
+DNS
+<br>
+DHCP
+
+</p>
+
+</div>
+
+
+
+
+<div class="project-info-card">
+
+<h3>
+LW-SRV01
+</h3>
+
+<p>
+
+File Server
+
+<br><br>
+
+SMB Shares
+<br>
+Print Services
+
+</p>
+
+</div>
+
+
+
+<div class="project-info-card">
+
+<h3>
+LW-DSKTP-IT
+</h3>
+
+<p>
+
+Administrative Testing Client
+
+<br><br>
+
+Windows 10
+
+</p>
+
+</div>
+
+
+
+<div class="project-info-card">
+
+<h3>
+LW-DSKTP-01
+</h3>
+
+<p>
+
+Standard User Client
+
+<br><br>
+
+Domain Joined
+
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================= NETWORK ================= -->
+
+
+<section class="section">
+
+
+<div class="container">
+
+
+<div class="section-head">
+
+<span class="eyebrow">
+Network Architecture
+</span>
+
+
+<h2 class="section-head__title">
+IP Addressing Plan
+</h2>
+
+
+</div>
+
+
+
+
+<div class="terminal-card">
+
+
+<pre>
+
+192.168.10.0/24
+
+
+Gateway
+└── 192.168.10.1
+
+
+Domain Controller
+└── 192.168.10.2
+
+
+Servers
+└── 192.168.10.3 - 192.168.10.5
+
+
+Network Devices
+└── 192.168.10.6 - 192.168.10.10
+
+
+DHCP Range
+└── 192.168.10.11 - 192.168.10.254
+
+
+Broadcast
+└── 192.168.10.255
+
+
+</pre>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- ================= ACTIVE DIRECTORY ================= -->
+
+
+<section class="section">
+
+
+<div class="container">
+
+
+<div class="section-head">
+
+
+<span class="eyebrow">
+Identity Management
+</span>
+
+
+<h2 class="section-head__title">
+Active Directory Structure
+</h2>
+
+
+</div>
+
+
+
+<div class="terminal-card">
+
+
+<pre>
+
+WIN.LOCAL
+
+│
+├── Servers
+│   ├── Domain Controller
+│   └── File Server
+│
+├── Users
+│   ├── Admin Users
+│   └── Standard Users
+│
+├── Groups
+│   ├── Admin_SG
+│   ├── IT_SG
+│   └── Public_SG
+│
+└── Workstations
+    ├── IT
+    └── Desktops
+
+</pre>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================= SERVICES ================= -->
+
+
+<section class="section">
+
+
+<div class="container">
+
+
+<div class="section-head">
+
+<span class="eyebrow">
+Configured Services
+</span>
+
+
+<h2 class="section-head__title">
+Infrastructure Components
+</h2>
+
+
+</div>
+
+
+
+<div class="services-grid">
+
+
+<div>✓ Active Directory</div>
+<div>✓ DNS</div>
+<div>✓ DHCP</div>
+<div>✓ File Services</div>
+<div>✓ Print Services</div>
+<div>✓ Security Groups</div>
+<div>✓ Shared Folders</div>
+<div>✓ Domain Authentication</div>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================= LESSONS ================= -->
+
+
+<section class="section">
+
+
+<div class="container">
+
+
+<div class="project-content-card">
+
+
+<span class="eyebrow">
+Lessons Learned
+</span>
+
+
+<h2>
+Understanding Enterprise Administration
+</h2>
+
+
+
+<p>
+
+This project reinforced the relationship between core
+enterprise services. Proper IP planning, DNS configuration,
+Active Directory design, and centralized management are
+critical components of a reliable infrastructure.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- ================= FUTURE ================= -->
+
+
+<section class="section">
+
+
+<div class="container">
+
+
+<div class="project-content-card">
+
+
+<span class="eyebrow">
+Future Improvements
+</span>
+
+
+<div class="project-card__tags">
+
+<span class="tag">Group Policy</span>
+<span class="tag">WSUS</span>
+<span class="tag">Certificate Services</span>
+<span class="tag">Backup Domain Controller</span>
+<span class="tag">VLAN Segmentation</span>
+<span class="tag">pfSense Firewall</span>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+</main>
+
+
+
+
+
+<script src="../js/particles.js"></script>
+<script src="../js/scroll.js"></script>
+<script src="../js/main.js"></script>
+
+
+</body>
+
+</html>
