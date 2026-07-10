@@ -705,6 +705,13 @@
   transform: translateY(-3px);
 }
 
+.contact {
+  min-height: auto;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  align-items: flex-start;
+}
+
 
 
 /* ---------- Footer Message ---------- */
