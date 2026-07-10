@@ -1,1 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>landonw.dev — Information Technology Professional</title>
+  <meta name="description" content="Portfolio of an Information Technology Professional — B.S. in Applied Computing." />
 
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/home.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+
+  <!-- ================= Splash Screen ================= -->
+  <div id="splash">
+     <div class="splash__tags">
+    <span class="tag"><\></span>
+    <span class="tag"> ☁︎ </span>
+    <span class="tag"> >_ </span>
+  </div>
+    
+    <p class="splash__text">Welcome to My</p>
+    <p class="splash__text">Portolio Website</p>
+  </div>
+
+  <!-- ================= Background Layers ================= -->
+  <canvas id="grid-canvas" aria-hidden="true"></canvas>
+  <div class="grid-glow" aria-hidden="true"></div>
+
+  <!-- ================= Floating Navbar ================= -->
+  <nav class="navbar">
+    <a href="#home" class="navbar__brand">
+      <!-- <img src="images/SIX_A337BAA3-E3C4-424A-8680-3F028B536419.png" alt="LW Logo" class="navbar__logo-icon"> --> 
+      <span class="navbar__logo">landonw.dev</span>
+    </a>
+    <button class="navbar__toggle" aria-label="Toggle navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="navbar__links">
+      <li><a class="navbar__link is-active" href="#home">Home</a></li>
+      <li><a class="navbar__link" href="#about">About</a></li>
+      <li><a class="navbar__link" href="#projects">Portfolio</a></li>
+      <li><a class="navbar__link" href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ================= Page Sections ================= -->
+  <main class="snap-container">
+
+    <!-- ---------- Hero / Home ---------- -->
+    <section id="home" class="section hero">
+      <div class="container hero__grid" style="display:grid; grid-template-columns:1.1fr .9fr; gap:var(--space-6); align-items:center; width:100%;">
+        <div class="hero__content">
+          <span class="eyebrow hero__eyebrow">Growing IT Professional</span>
+
+          <h1 class="hero__title">
+            Information Technology
+            <span>Professional</span>
+          </h1>
+
+          <p class="typing-line" data-typing-target="B.S. in Applied Computing"></p>
+
+          <p class="hero__desc">
+            I am an Information Technology Professional with a Bachelor of Science in Applied
+            Computing. I enjoy solving technical challenges, developing responsive websites,
+            automating workflows through PowerShell, and continuously expanding my knowledge in
+            networking, systems administration, and cybersecurity.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn-primary" href="#projects" data-scroll-to="projects">View Portfolio</a>
+            <a class="btn btn-secondary" href="#contact" data-scroll-to="contact">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="hero__portrait">
+          <div class="portrait-backdrop" aria-hidden="true"></div>
+          <div class="portrait-ring portrait-ring--outer" aria-hidden="true"></div>
+          <div class="portrait-ring portrait-ring--inner" aria-hidden="true"></div>
+          <div class="portrait-card">
+            <img src="images/IMG_8628.jpeg" alt="Professional portrait" />
+          </div>
+        </div>
+      </div>
+
+      <button class="scroll-indicator" data-scroll-to="about" aria-label="Scroll to About section">
+        Scroll ↓
+      </button>
+    </section>
+
+    <!-- ---------- About ---------- -->
+    <section id="about" class="section">
+      <div class="container about__grid">
+        <div class="reveal">
+          <span class="eyebrow">About</span>
+          <h2 class="about__heading" style="margin-top: var(--space-2);">
+            Grounded in fundamentals, built for reliability.
+          </h2>
+        </div>
+
+        <div class="about__body reveal">
+          <p>
+            I approach IT work the same way I approach a support ticket: understand the root
+            cause before touching anything. That mindset carries into everything I build, from
+            internal automation scripts to the interfaces end users interact with every day.
+          </p>
+          <p>
+            My background spans systems administration, networking fundamentals, and front-end
+            development, giving me a practical, full-stack view of how technology decisions
+            affect the people who rely on them.
+          </p>
+
+          <div class="about__facts reveal-stagger">
+            <div class="fact-card">
+              <div class="fact-card__label">Education</div>
+              <div>B.S. in Applied Computing</div>
+            </div>
+            <div class="fact-card">
+              <div class="fact-card__label">Focus</div>
+              <div>Systems &amp; Web</div>
+            </div>
+            <div class="fact-card">
+              <div class="fact-card__label">Automation</div>
+              <div>PowerShell &amp; Scripting</div>
+            </div>
+            <div class="fact-card">
+              <div class="fact-card__label">Currently exploring</div>
+              <div>Networking &amp; Security</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="scroll-indicator" data-scroll-to="projects" aria-label="Scroll to Projects section">
+        Scroll ↓
+      </button>
+    </section>
+
+    <!-- ---------- Portfolio ---------- -->
+    <section id="projects" class="section">
+        <div class="container">
+
+    <div class="section-head reveal">
+      <span class="eyebrow">Selected Work</span>
+      <h2 class="section-head__title">Portfolio</h2>
+
+      <div class="portfolio-tabs">
+        <button class="tab active" data-tab="0">Projects</button>
+        <button class="tab" data-tab="1">Skills</button>
+        <button class="tab" data-tab="2">Experience</button>
+      </div>
+    </div>
+
+    <div class="portfolio-wrapper">
+
+    <div class="portfolio-slider">
+
+        <!-- Portfolio -->
+        <div class="portfolio-panel">
+
+            <div class="projects-grid">
+
+                <article class="project-card">
+                    <div class="project-card__index">01</div>
+                    <h3 class="project-card__title">Active Directory Lab</h3>
+                    <p class="project-card__desc">
+                       Designed and deployed a complete Windows Server infrastructure lab using VMware, 
+                       featuring Active Directory, DNS, DHCP, and domain-connected clients.
+                    </p>
+                  <div class="project-card__tags">
+                    <span class="tag">Active Directory</span>
+                    <span class="tag">Networking</span>
+                    <span class="tag">DNS/DHCP</span>
+                  </div>
+                  <div class="project-links">
+                    <a href="Projects/Windows-Network.html" class="project-explore">
+                      Explore Project <span>→</span>
+                    </a>
+                  </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-card__index">02</div>
+                    <h3 class="project-card__title">PowerShell Automation Suite</h3>
+                    <p class="project-card__desc">
+                      A collection of scripts that automate routine account provisioning and system
+                      health checks across a Windows environment.
+                    </p>
+                   <div class="project-card__tags">
+                     <span class="tag">PowerShell</span>
+                     <span class="tag">Active Directory</span>
+                   </div>
+                   <div class="project-links">
+                    <a href="Projects/placeholder.html" class="project-explore">
+                      Explore Project <span>→</span>
+                    </a>
+                  </div>
+                  </article>
+
+                <article class="project-card">
+                    <div class="project-card__index">03</div>
+                    <h3 class="project-card__title">Cookie Business Page</h3>
+                    <p class="project-card__desc">
+                      A segmented home lab used to practice VLAN configuration, firewall rules, and
+                      monitoring — the foundation for ongoing networking study.
+                   </p>
+                   <div class="project-card__tags">
+                      <span class="tag">CloudFlare Pages</span>
+                      <span class="tag">Domain</span>
+                      <span class="tag">DNS</span>
+                   </div>
+                   <div class="project-links">
+                     <a href="Projects/Chrissy-Raes-Project.html" class="project-explore">
+                       Explore Project <span>→</span>
+                     </a>
+                   </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-card__index">04</div>
+                    <h3 class="project-card__title">This Portfolio</h3>
+                    <p class="project-card__desc">
+                      Designed and developed a personal portfolio platform to showcase infrastructure labs and technical projects.
+                    </p>
+                    <div class="project-card__tags">
+                       <span class="tag">HTML5</span>
+                       <span class="tag">CSS3</span>
+                       <span class="tag">JavaScript</span>
+                   </div>
+                   <div class="project-links">
+                    <a href="Projects/Portfolio-Website.html" class="project-explore">
+                          Explore Project <span>→</span>
+                    </a>
+                  </div>
+                  </article>
+
+            </div>
+
+        </div>
+
+        <!-- Skills -->
+        <div class="portfolio-panel">
+           <div class="skills-grid reveal-stagger">
+          <div class="skill-card">
+            <div class="skill-card__title">Systems</div>
+            <div class="skill-card__list">
+              <span>Windows Server</span>
+              <span>Active Directory</span>
+              <span>Linux Basics</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card__title">Networking</div>
+            <div class="skill-card__list">
+              <span>TCP/IP &amp; DNS</span>
+              <span>VLANs &amp; Firewalls</span>
+              <span>Network Troubleshooting</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card__title">Development</div>
+            <div class="skill-card__list">
+              <span>HTML5 / CSS3</span>
+              <span>JavaScript</span>
+              <span>PowerShell</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card__title">Security</div>
+            <div class="skill-card__list">
+              <span>Access Management</span>
+              <span>Security Fundamentals</span>
+              <span>Monitoring &amp; Logging</span>
+            </div>
+          </div>
+         </div>
+        </div>
+
+        <!-- Experience -->
+        <div class="portfolio-panel">
+          <div class="timeline reveal-stagger">
+           <div class="timeline-item">
+            <div class="timeline-item__meta">2024 — Present</div>
+            <h3 class="timeline-item__title">IT Support Specialist</h3>
+            <p class="timeline-item__desc">
+              Handling day-to-day support, account administration, and small automation projects
+              that reduce repetitive manual work for the team.
+            </p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-item__meta">2018 — 2024</div>
+            <h3 class="timeline-item__title">B.S. in Applied Computing</h3>
+            <p class="timeline-item__desc">
+              Coursework spanning systems administration, networking, and software development,
+              with a growing focus on cybersecurity fundamentals.
+            </p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-item__meta">Ongoing</div>
+            <h3 class="timeline-item__title">Independent Study &amp; Projects</h3>
+            <p class="timeline-item__desc">
+              Building a home lab, scripting automations, and shipping small web projects to
+              keep skills current between formal roles.
+            </p>
+          </div>
+        </div>
+        </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+      <button class="scroll-indicator" data-scroll-to="contact" aria-label="Scroll to Contact section">
+        Scroll ↓
+      </button>
+    </section>
+
+    <!-- ---------- Contact ---------- -->
+    <section id="contact" class="section contact">
+      <div class="container contact__inner reveal">
+        <span class="eyebrow">Get in Touch</span>
+        <h2 class="contact__title">
+          Thanks for stopping by my portfolio. I'm always happy to connect with fellow IT professionals, 
+          students, recruiters, or anyone interested in technology. Whether you have a question or just 
+          want to reach out and chat, feel free to send me a message. I'd love to hear from you.
+        </h2>
+        <a class="contact__email" href="mailto:hello@landonw.dev">hello@landonw.dev</a>
+        <div class="contact__links">
+          <a class="btn btn-primary" href="https://www.linkedin.com/in/landon-winsky/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn-secondary" href="https://github.com/landonw-dev" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= Scripts ================= -->
+  <script src="js/particles.js"></script>
+  <script src="js/typing.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
