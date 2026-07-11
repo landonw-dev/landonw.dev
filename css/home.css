@@ -717,7 +717,7 @@
 
 
 /* ==========================================================
-   COMPACT CONTACT SECTION
+   FINAL COMPACT CONTACT OVERRIDE
    ========================================================== */
 
 .contact {
@@ -726,92 +726,116 @@
 
 
 .contact-container {
-  width: min(1000px, 100%);
+  max-width: 950px;
 }
 
 
 /* Header */
 
 .contact-header {
-  max-width: 650px;
-  margin: 0 auto 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .contact-header h2 {
-  margin-bottom: .5rem;
+  margin-bottom: .35rem;
 }
 
 .contact-header p {
-  font-size: .95rem;
+  font-size: .85rem;
+  line-height: 1.4;
 }
 
 
 
-/* Contact Cards */
+/* Ways to Reach Me */
 
-.contact-content h3 {
-  margin-bottom: 1rem;
-  font-size: 1.1rem;
+.contact-content h3,
+.contact-form-container h3 {
+  font-size: 1rem;
+  margin-bottom: .75rem;
 }
 
 
 .contact-grid {
-  gap: 1rem;
-  margin-bottom: 1.5rem;
+  gap: .75rem;
+  margin-bottom: 1rem;
 }
 
 
 .contact-card {
-  padding: 1rem;
-  min-height: 70px;
+  padding: .75rem 1rem;
+  border-radius: .75rem;
+}
+
+
+.contact-card h4 {
+  font-size: .95rem;
+}
+
+
+.contact-card p,
+.contact-card a {
+  font-size: .8rem;
 }
 
 
 .contact-icon {
-  width: 38px;
-  height: 38px;
+  width: 32px;
+  height: 32px;
+  font-size: .9rem;
 }
 
 
 
 /* Form */
 
-.contact-form-container h3 {
-  margin-bottom: 1rem;
+.contact-form-container {
+  margin-top: 0;
 }
 
 
 .contact-form {
-  gap: .75rem;
+  gap: .5rem;
 }
 
 
 .form-group {
-  gap: .25rem;
+  gap: .15rem;
+}
+
+
+.form-group label {
+  font-size: .75rem;
 }
 
 
 .form-group input,
 .form-group textarea {
-  padding: .65rem .85rem;
+  padding: .45rem .7rem;
+  font-size: .85rem;
 }
 
 
 .form-group textarea {
-  height: 80px;
+  height: 55px;
 }
 
 
 .contact-form button {
-  padding: .7rem 1.4rem;
+  padding: .55rem 1.2rem;
+  font-size: .85rem;
 }
+
 
 
 /* Footer */
 
 .contact-footer {
-  margin-top: 1.5rem;
-  font-size: .9rem;
+  margin-top: .75rem;
+}
+
+.contact-footer p {
+  font-size: .8rem;
 }
 
 
