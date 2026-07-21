@@ -96,52 +96,128 @@
     </section>
 
     <!-- ---------- About ---------- -->
-    <section id="about" class="section">
-      <div class="container about__grid">
-        <div class="reveal">
-          <span class="eyebrow">About</span>
-          <h2 class="about__heading" style="margin-top: var(--space-2);">
-            Grounded in fundamentals, built for reliability.
-          </h2>
-        </div>
+<section id="about" class="section">
+  <div class="container about">
 
-        <div class="about__body reveal">
-          <p>
-            I approach IT work the same way I approach a support ticket: understand the root
-            cause before touching anything. That mindset carries into everything I build, from
-            internal automation scripts to the interfaces end users interact with every day.
-          </p>
-          <p>
-            My background spans systems administration, networking fundamentals, and front-end
-            development, giving me a practical, full-stack view of how technology decisions
-            affect the people who rely on them.
-          </p>
+    <!-- Section Header -->
+    <div class="about__header reveal">
+      <span class="eyebrow">About</span>
 
-          <div class="about__facts reveal-stagger">
-            <div class="fact-card">
-              <div class="fact-card__label">Education</div>
-              <div>B.S. in Applied Computing</div>
-            </div>
-            <div class="fact-card">
-              <div class="fact-card__label">Focus</div>
-              <div>Systems &amp; Web</div>
-            </div>
-            <div class="fact-card">
-              <div class="fact-card__label">Automation</div>
-              <div>PowerShell &amp; Scripting</div>
-            </div>
-            <div class="fact-card">
-              <div class="fact-card__label">Currently exploring</div>
-              <div>Networking &amp; Security</div>
-            </div>
-          </div>
-        </div>
+      <h2 class="about__heading">
+        Grounded in fundamentals, built for reliability.
+      </h2>
+
+      <p class="about__intro">
+        I enjoy understanding how technology works behind the scenes and
+        building solutions that make life easier for the people who use it.
+      </p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="about__content">
+
+      <!-- Left -->
+      <div class="about__story reveal">
+        <h3>My Approach</h3>
+
+        <p>
+          I approach IT the same way I approach a support ticket:
+          understand the root cause before making changes. That mindset
+          carries into everything I build—from troubleshooting systems and
+          automating repetitive tasks to creating responsive web
+          applications.
+        </p>
+
+        <p>
+          My experience spans systems administration, networking,
+          front-end development, and PowerShell automation, giving me a
+          practical understanding of both the technology itself and the
+          people who rely on it every day.
+        </p>
       </div>
 
-      <button class="scroll-indicator" data-scroll-to="projects" aria-label="Scroll to Projects section">
-        Scroll ↓
-      </button>
-    </section>
+      <!-- Right -->
+      <div class="about__specialties reveal">
+
+        <h3>What I Enjoy Working With</h3>
+
+        <div class="specialty">
+          <span class="specialty__icon">🖥️</span>
+
+          <div>
+            <h4>Infrastructure</h4>
+            <p>Windows, Linux, Active Directory, virtualization, and networking.</p>
+          </div>
+        </div>
+
+        <div class="specialty">
+          <span class="specialty__icon">⚙️</span>
+
+          <div>
+            <h4>Automation</h4>
+            <p>PowerShell scripting to simplify repetitive administrative tasks.</p>
+          </div>
+        </div>
+
+        <div class="specialty">
+          <span class="specialty__icon">🌐</span>
+
+          <div>
+            <h4>Development</h4>
+            <p>Modern, responsive websites built with HTML, CSS, JavaScript, and Cloudflare.</p>
+          </div>
+        </div>
+
+        <div class="specialty">
+          <span class="specialty__icon">🔒</span>
+
+          <div>
+            <h4>Learning</h4>
+            <p>Expanding my knowledge of networking, security, and enterprise infrastructure.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Bottom Cards -->
+    <div class="about__facts reveal-stagger">
+
+      <div class="fact-card">
+        <div class="fact-card__label">Education</div>
+        <strong>B.S.</strong>
+        <span>Applied Computing</span>
+      </div>
+
+      <div class="fact-card">
+        <div class="fact-card__label">Current Role</div>
+        <strong>IT Support</strong>
+        <span>Systems & User Support</span>
+      </div>
+
+      <div class="fact-card">
+        <div class="fact-card__label">Favorite Tool</div>
+        <strong>PowerShell</strong>
+        <span>Automation & Scripting</span>
+      </div>
+
+      <div class="fact-card">
+        <div class="fact-card__label">Current Focus</div>
+        <strong>Networking</strong>
+        <span>Infrastructure & Security</span>
+      </div>
+
+    </div>
+
+  </div>
+
+  <button class="scroll-indicator"
+          data-scroll-to="projects"
+          aria-label="Scroll to Projects section">
+    Scroll ↓
+  </button>
+</section>
 
     <!-- ---------- Portfolio ---------- -->
     <section id="projects" class="section">
