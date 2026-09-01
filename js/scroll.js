@@ -10,28 +10,28 @@
 
   /* ---------- Splash intro ---------- */
   function runSplash() {
-    if (!splash) return;
+  if (!splash) return;
 
-    // Skip the splash if it has already been shown during this session
-    if (sessionStorage.getItem("splashShown")) {
-      splash.style.display = "none";
-      return;
-    }
+  // If the splash has already been shown this session, remove it immediately
+  if (sessionStorage.getItem("splashShown") === "true") {
+    splash.style.display = "none";
+    return;
+  }
 
-    // Mark the splash as shown for this browser session
-    sessionStorage.setItem("splashShown", "true");
+  const SPLASH_HOLD_MS = 1000;
+  const SPLASH_TRANSITION_MS = 1000;
 
-    const SPLASH_HOLD_MS = 1000;
-    const SPLASH_TRANSITION_MS = 1000;
+  setTimeout(() => {
+    splash.classList.add("splash-exit");
 
     setTimeout(() => {
-      splash.classList.add("splash-exit");
+      splash.style.display = "none";
 
-      setTimeout(() => {
-        splash.style.display = "none";
-      }, SPLASH_TRANSITION_MS);
-    }, SPLASH_HOLD_MS + 300); // + fade-in time
-  }
+      // Only mark it as shown after the splash has successfully finished
+      sessionStorage.setItem("splashShown", "true");
+    }, SPLASH_TRANSITION_MS);
+  }, SPLASH_HOLD_MS + 300);
+}
 
   /* ---------- Section snapping ---------- */
   function initSnapScroll() {
