@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>landonw.dev — Linux Home Server</title>
+
+<meta
+  name="description"
+  content="Linux home server built from a repurposed EliteDesk featuring file sharing, remote VPN access, Nginx web hosting, and virtualization."
+/>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+  href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+  rel="stylesheet"
+/>
+
+<!-- Styles -->
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/home.css">
+<link rel="stylesheet" href="../css/animations.css">
+<link rel="stylesheet" href="../css/project.css">
+
+</head>
+
+
+<body>
+
+<!-- ================= BACKGROUND ================= -->
+
+<canvas id="grid-canvas"></canvas>
+<div class="grid-glow"></div>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
+
+<a href="../index.html" class="navbar__brand">
+  <span class="navbar__logo">
+    landonw.dev
+  </span>
+</a>
+
+<ul class="navbar__links">
+
+<li>
+  <a class="navbar__link" href="../index.html">
+    Home
+  </a>
+</li>
+
+<li>
+  <a class="navbar__link" href="../index.html#about">
+    About
+  </a>
+</li>
+
+<li>
+  <a class="navbar__link is-active" href="../index.html#projects">
+    Portfolio
+  </a>
+</li>
+
+<li>
+  <a class="navbar__link" href="../index.html#contact">
+    Contact
+  </a>
+</li>
+
+</ul>
+
+</nav>
+
+
+<main class="project-page">
+
+
+<!-- ================= HERO ================= -->
+
+<section class="section">
+
+<div class="container">
+
+<div class="project-hero-card reveal">
+
+<div class="project-hero__grid">
+
+
+<!-- HERO CONTENT -->
+
+<div class="project-hero__content">
+
+<span class="eyebrow">
+Linux Infrastructure
+</span>
+
+<h1 class="hero__title">
+
+Linux
+<span>
+Home Server
+</span>
+
+</h1>
+
+<p class="hero__desc">
+
+Built and configured a dedicated Linux home server from
+the ground up to provide centralized file sharing, remote
+network access, web hosting, and virtualization. The
+server became the foundation of my home lab and was used
+to host my first web project with Nginx.
+
+</p>
+
+
+<div class="project-card__tags">
+
+<span class="tag">Debian Linux</span>
+<span class="tag">Samba</span>
+<span class="tag">Tailscale</span>
+<span class="tag">Nginx</span>
+<span class="tag">KVM</span>
+<span class="tag">SSH</span>
+
+</div>
+
+
+<div class="hero__actions">
+
+<a href="../index.html#projects" class="btn btn-primary">
+Back to Projects
+</a>
+
+<a href="#" class="btn btn-secondary">
+GitHub
+</a>
+
+</div>
+
+</div>
+
+
+<!-- SERVER DIAGRAM -->
+
+<div class="network-diagram-card">
+
+
+<div class="network-node">
+
+🌐 Home Network
+
+<span>
+Router / Gateway
+</span>
+
+</div>
+
+
+<div class="network-line"></div>
+
+
+<div class="network-node server">
+
+🖥 Linux Home Server
+
+<span>
+Debian 13 • GNOME
+<br>
+EliteDesk Platform
+<br>
+192.168.x.x
+</span>
+
+</div>
+
+
+<div class="network-branches">
+
+
+<div class="network-node">
+
+📁 File Server
+
+<span>
+Samba
+<br>
+Local File Sharing
+</span>
+
+</div>
+
+
+<div class="network-node">
+
+🔐 Remote Access
+
+<span>
+Tailscale VPN
+<br>
+Secure Remote Access
+</span>
+
+</div>
+
+
+<div class="network-node">
+
+🌐 Web Server
+
+<span>
+Nginx
+<br>
+Chrissy Rae's Cookies
+</span>
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= PROJECT OVERVIEW ================= -->
+
+<section class="section">
+
+<div class="container">
+
+<div class="section-head reveal">
+
+<span class="eyebrow">
+Project Overview
+</span>
+
+<h2 class="section-head__title">
+Building My Own Linux Infrastructure
+</h2>
+
+</div>
+
+
+<div class="terminal-card">
+
+<pre>
+This project began with a small EliteDesk computer that I repurposed
+into a dedicated Linux server. Rather than relying entirely on cloud
+services, I wanted to build and manage infrastructure myself while
+developing a stronger understanding of Linux administration and
+networking.
+
+The server was configured with Debian Linux and became the central
+system for several home-lab services. Samba was configured to provide
+file sharing across devices on my local network, allowing computers
+such as my MacBook to access centralized storage.
+
+I also configured Tailscale to create secure remote connectivity to
+my home network. This allowed me to connect my MacBook back to the
+server while working away from home and continue developing projects
+without needing to expose the server directly to the public internet.
+
+One of the first practical applications of the server was hosting
+"Chrissy Rae's Cookies," my first web project deployed through Nginx.
+This gave me hands-on experience with Linux web hosting, networking,
+server configuration, and the process of taking a locally developed
+website and making it accessible through real infrastructure.
+
+The server eventually evolved into the foundation for a larger home
+lab, including KVM virtualization for additional Linux and Windows
+systems used for networking, security, and infrastructure practice.
+</pre>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= HARDWARE ================= -->
+
+<section class="section">
+
+<div class="container">
+
+<div class="section-head reveal">
+
+<span class="eyebrow">
+Server Hardware
+</span>
+
+<h2 class="section-head__title">
+Repurposed Enterprise Hardware
+</h2>
+
+</div>
+
+
+<div class="project-grid">
+
+
+<div class="project-info-card">
+
+<h3>Platform</h3>
+
+<p>
+HP EliteDesk
+</p>
+
+</div>
+
+
+<div class="project-info-card">
+
+<h3>Processor</h3>
+
+<p>
+Intel Core i5-7500T
+</p>
+
+</div>
+
+
+<div class="project-info-card">
+
+<h3>Memory</h3>
+
+<p>
+16 GB RAM
+</p>
+
+</div>
+
+
+<div class="project-info-card">
+
+<h3>Storage</h3>
+
+<p>
+256 GB
+</p>
+
+</div>
+
+
+<div class="project-info-card">
+
+<h3>Operating System</h3>
+
+<p>
+Debian 13 "Trixie"
+</p>
+
+</div>
+
+
+<div class="project-info-card">
+
+<h3>Desktop Environment</h3>
+
+<p>
+GNOME
+</p>
+
+</div>
+
+
+<div class="project-info-card">
+
+<h3>Architecture</h3>
+
+<p>
+x86-64
+</p>
+
+</div>
+
+
+<div class="project-info-card">
+
+<h3>Purpose</h3>
+
+<p>
+Home Lab Infrastructure
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= SERVICES ================= -->
+
+<section class="section">
+
+<div class="container">
+
+<div class="section-head reveal">
+
+<span class="eyebrow">
+Infrastructure Services
+</span>
+
+<h2 class="section-head__title">
+Services Running on the Server
+</h2>
+
+</div>
+
+
+<div class="project-grid">
+
+
+<div class="project-info-card">
+
+<h3>📁 Samba</h3>
+
+<p>
+Configured network file sharing so local devices could
+access centralized files from the server.
+</p>
+
+</div>
+
+
+<div class="project-info-card">
+
+<h3>🔐 Tailscale</h3>
+
+<p>
+Established secure remote connectivity to the home network
+without exposing internal services directly to the internet.
+</p>
+
+</div>
+
+
+<div class="project-info-card">
+
+<h3>🌐 Nginx</h3>
+
+<p>
+Configured Nginx as a web server and used it to host the
+Chrissy Rae's Cookies project.
+</p>
+
+</div>
+
+
+<div class="project-info-card">
+
+<h3>💻 OpenSSH</h3>
+
+<p>
+Configured SSH for remote administration and command-line
+management of the Linux server.
+</p>
+
+</div>
+
+
+<div class="project-info-card">
+
+<h3>🛡 UFW</h3>
+
+<p>
+Configured the Linux firewall to control which network
+services were allowed to communicate with the server.
+</p>
+
+</div>
+
+
+<div class="project-info-card">
+
+<h3>🚨 Fail2ban</h3>
+
+<p>
+Added automated protection against repeated authentication
+attempts and common brute-force activity.
+</p>
+
+</div>
+
+
+<div class="project-info-card">
+
+<h3>⚙ KVM</h3>
+
+<p>
+Enabled hardware-assisted virtualization and used KVM to
+host additional virtual machines for continued lab work.
+</p>
+
+</div>
+
+
+<div class="project-info-card">
+
+<h3>🖥 GNOME</h3>
+
+<p>
+Maintained a graphical Linux environment while also gaining
+experience managing the system through the terminal.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= FILE SERVER ================= -->
+
+<section class="section">
+
+<div class="container">
+
+<div class="section-head reveal">
+
+<span class="eyebrow">
+File Infrastructure
+</span>
+
+<h2 class="section-head__title">
+Centralized File Sharing
+</h2>
+
+</div>
+
+
+<div class="terminal-card">
+
+<pre>
+One of the first services I configured was Samba, turning the Linux
+server into a centralized file server for devices on my local network.
+
+The goal was to create a location where files could be stored and
+accessed from multiple computers rather than maintaining separate
+copies on each device.
+
+This required learning how Linux permissions, ownership, directory
+access, and network shares interact. I also used the project to become
+more comfortable troubleshooting access and permission issues from
+both Linux and client devices.
+
+The result was a practical introduction to server-side storage
+management and network file sharing.
+</pre>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= REMOTE ACCESS ================= -->
+
+<section class="section">
+
+<div class="container">
+
+<div class="section-head reveal">
+
+<span class="eyebrow">
+Remote Connectivity
+</span>
+
+<h2 class="section-head__title">
+Connecting Back to Home
+</h2>
+
+</div>
+
+
+<div class="terminal-card">
+
+<pre>
+To make the server useful outside my home network, I configured
+Tailscale as a VPN-based remote access solution.
+
+This allowed my MacBook to establish a secure connection back to
+the home network while I was away. Instead of making internal
+services directly accessible from the public internet, the VPN
+provided authenticated access to the devices inside the lab.
+
+This became especially useful for development. I could work from
+outside the house while still accessing the Linux server and its
+services as though I were connected locally.
+
+The project gave me practical experience with VPN concepts,
+private networking, remote administration, and secure access to
+internal infrastructure.
+</pre>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= WEB HOSTING ================= -->
+
+<section class="section">
+
+<div class="container">
+
+<div class="section-head reveal">
+
+<span class="eyebrow">
+Web Infrastructure
+</span>
+
+<h2 class="section-head__title">
+From Linux Server to Web Server
+</h2>
+
+</div>
+
+
+<div class="terminal-card">
+
+<pre>
+One of the most important milestones of this project was using the
+server to host my first web project.
+
+I installed and configured Nginx as the web server and deployed
+"Chrissy Rae's Cookies" to the Linux system. This connected several
+different areas of the home lab into a single practical project:
+
+    Development
+        ↓
+    Linux Server
+        ↓
+    Nginx
+        ↓
+    Network Connectivity
+        ↓
+    Web Application
+
+The project gave me experience with the relationship between a
+website and the infrastructure required to serve it.
+
+It also became the starting point for my interest in combining
+systems administration, networking, and web development.
+</pre>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= SECURITY ================= -->
+
+<section class="section">
+
+<div class="container">
+
+<div class="section-head reveal">
+
+<span class="eyebrow">
+Security & Administration
+</span>
+
+<h2 class="section-head__title">
+Hardening the Server
+</h2>
+
+</div>
+
+
+<div class="project-grid">
+
+
+<div class="project-info-card">
+
+<h3>Firewall</h3>
+
+<p>
+Configured UFW to limit network access to required services
+and reduce unnecessary exposure.
+</p>
+
+</div>
+
+
+<div class="project-info-card">
+
+<h3>SSH</h3>
+
+<p>
+Used SSH for remote command-line administration and
+server management.
+</p>
+
+</div>
+
+
+<div class="project-info-card">
+
+<h3>Fail2ban</h3>
+
+<p>
+Implemented automated protection against repeated
+authentication attempts.
+</p>
+
+</div>
+
+
+<div class="project-info-card">
+
+<h3>Service Management</h3>
+
+<p>
+Learned to manage Linux services, networking, permissions,
+packages, and system configuration.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= VIRTUALIZATION ================= -->
+
+<section class="section">
+
+<div class="container">
+
+<div class="section-head reveal">
+
+<span class="eyebrow">
+Virtualization
+</span>
+
+<h2 class="section-head__title">
+Expanding the Home Lab
+</h2>
+
+</div>
+
+
+<div class="terminal-card">
+
+<pre>
+As the home lab developed, the EliteDesk became more than a simple
+file and web server.
+
+Hardware virtualization was enabled and KVM was configured so the
+system could host additional virtual machines. This provided a
+platform for experimenting with different operating systems and
+security tools without requiring additional physical hardware.
+
+The virtualization environment was later used for systems including
+Kali Linux, Wazuh, Ubuntu, Windows 11, and Metasploitable 2.
+
+This allowed the same physical server to support multiple areas of
+technical development:
+
+    Linux Administration
+    Networking
+    Web Hosting
+    Virtualization
+    Security Testing
+    SIEM / Monitoring
+    Windows Infrastructure
+</pre>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= WHAT I LEARNED ================= -->
+
+<section class="section">
+
+<div class="container">
+
+<div class="section-head reveal">
+
+<span class="eyebrow">
+Skills Developed
+</span>
+
+<h2 class="section-head__title">
+What This Project Taught Me
+</h2>
+
+</div>
+
+
+<div class="project-grid">
+
+
+<div class="project-info-card">
+
+<h3>Linux Administration</h3>
+
+<p>
+Command-line administration, package management, permissions,
+services, networking, and system troubleshooting.
+</p>
+
+</div>
+
+
+<div class="project-info-card">
+
+<h3>Networking</h3>
+
+<p>
+IP addressing, local network services, VPN connectivity,
+ports, firewall rules, and remote access.
+</p>
+
+</div>
+
+
+<div class="project-info-card">
+
+<h3>Server Management</h3>
+
+<p>
+Deploying services, configuring access, troubleshooting failures,
+and maintaining a continuously running server.
+</p>
+
+</div>
+
+
+<div class="project-info-card">
+
+<h3>Web Infrastructure</h3>
+
+<p>
+Understanding how Nginx, DNS, networking, and website files
+come together to deliver a web application.
+</p>
+
+</div>
+
+
+<div class="project-info-card">
+
+<h3>Virtualization</h3>
+
+<p>
+Configured KVM and used virtualization to expand the capabilities
+of a single physical server.
+</p>
+
+</div>
+
+
+<div class="project-info-card">
+
+<h3>Security Fundamentals</h3>
+
+<p>
+Applied firewall rules, VPN-based access, SSH administration,
+and brute-force protection.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= CONCLUSION ================= -->
+
+<section class="section">
+
+<div class="container">
+
+<div class="section-head reveal">
+
+<span class="eyebrow">
+Project Outcome
+</span>
+
+<h2 class="section-head__title">
+A Server That Became a Lab
+</h2>
+
+</div>
+
+
+<div class="terminal-card">
+
+<pre>
+What started as a small Linux server became the foundation for my
+entire home lab.
+
+The project gave me hands-on experience building infrastructure
+instead of simply consuming it. I configured the operating system,
+managed network services, created shared storage, established
+remote connectivity, deployed a web server, implemented basic
+security controls, and eventually expanded the system into a
+virtualization platform.
+
+Most importantly, this project connected several areas of IT that
+I had been learning independently and gave me a practical
+environment where I could continue experimenting.
+
+The EliteDesk became the foundation for my ongoing work in Linux,
+networking, systems administration, cybersecurity, and web
+infrastructure.
+</pre>
+
+</div>
+
+</div>
+
+</section>
+
+
+</main>
+
+
+<!-- ================= SCRIPTS ================= -->
+
+<script src="../js/particles.js"></script>
+<script src="../js/scroll.js"></script>
+<script src="../js/main.js"></script>
+
+</body>
+
+</html>
+```
