@@ -12,17 +12,27 @@
   function runSplash() {
     if (!splash) return;
 
+    // Skip splash if it has already been shown during this session
+    if (sessionStorage.getItem("splashShown")) {
+      splash.style.display = "none";
+      return;
+    }
+
+    // Mark splash as shown
+    sessionStorage.setItem("splashShown", "true");
+
     const SPLASH_HOLD_MS = 1000;
     const SPLASH_TRANSITION_MS = 1000;
 
     setTimeout(() => {
       splash.classList.add("splash-exit");
+
       setTimeout(() => {
         splash.style.display = "none";
       }, SPLASH_TRANSITION_MS);
     }, SPLASH_HOLD_MS + 300); // + fade-in time
   }
-
+   
   /* ---------- Section snapping ---------- */
   function initSnapScroll() {
     if (!container) return;
