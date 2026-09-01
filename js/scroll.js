@@ -8,14 +8,16 @@
   const splash = document.getElementById("splash");
   const container = document.querySelector(".snap-container");
 
-  /* ---------- Splash intro ---------- */
-  function runSplash() {
+/* ---------- Splash intro ---------- */
+function runSplash() {
   if (!splash) return;
 
-  // If the splash has already been shown this session, remove it immediately
+  // If the splash has already been shown this session,
+  // hide it immediately and do not run the animation.
   if (sessionStorage.getItem("splashShown") === "true") {
     splash.style.display = "none";
     return;
+
   }
 
   const SPLASH_HOLD_MS = 1000;
@@ -26,8 +28,6 @@
 
     setTimeout(() => {
       splash.style.display = "none";
-
-      // Only mark it as shown after the splash has successfully finished
       sessionStorage.setItem("splashShown", "true");
     }, SPLASH_TRANSITION_MS);
   }, SPLASH_HOLD_MS + 300);
