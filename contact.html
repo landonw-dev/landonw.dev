@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +18,6 @@
   <link rel="stylesheet" href="css/animations.css" />
   <link rel="stylesheet" href="css/home.css" />
   <link rel="stylesheet" href="css/message.css" />
-  
 
 </head>
 
@@ -76,17 +76,13 @@
   </nav>
 
 
-
   <!-- Contact Page -->
 
   <main class="contact-page">
 
-
     <section class="contact-hero">
 
-
       <div class="contact-card">
-
 
         <div class="contact-header">
 
@@ -109,9 +105,13 @@
         </div>
 
 
+        <!-- Formspree Contact Form -->
 
-        <form class="contact-form">
-
+        <form
+          class="contact-form"
+          action="https://formspree.io/f/maeyjoey"
+          method="POST"
+        >
 
           <div class="form-row">
 
@@ -121,14 +121,14 @@
                 Name
               </label>
 
-              <input 
+              <input
                 type="text"
                 id="name"
                 name="name"
-                placeholder="Your name">
+                placeholder="Your name"
+                required>
 
             </div>
-
 
 
             <div class="form-group">
@@ -137,16 +137,16 @@
                 Email
               </label>
 
-              <input 
+              <input
                 type="email"
                 id="email"
                 name="email"
-                placeholder="your@email.com">
+                placeholder="your@email.com"
+                required>
 
             </div>
 
           </div>
-
 
 
           <div class="form-group">
@@ -159,11 +159,10 @@
               type="text"
               id="subject"
               name="subject"
-              placeholder="What would you like to discuss?">
+              placeholder="What would you like to discuss?"
+              required>
 
           </div>
-
-
 
 
           <div class="form-group">
@@ -176,32 +175,29 @@
               id="message"
               name="message"
               rows="6"
-              placeholder="Write your message here..."></textarea>
+              placeholder="Write your message here..."
+              required></textarea>
 
           </div>
-
 
 
           <button type="submit" class="btn btn-primary">
             Send Message →
           </button>
 
-
         </form>
-
 
       </div>
 
+
       <a href="index.html#contact" class="contact-back">
-         ← Back to Portfolio
+        ← Back to Portfolio
       </a>
 
 
     </section>
 
-
   </main>
-
 
 
   <!-- Scripts -->
