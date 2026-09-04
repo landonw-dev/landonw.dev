@@ -108,6 +108,7 @@
 
         <form
           class="contact-form"
+          id="contact-form"
           action="https://formspree.io/f/maeyjoey"
           method="POST"
         >
@@ -184,6 +185,14 @@
             Send Message →
           </button>
 
+          <!-- Submission status -->
+          <p
+            id="form-status"
+            class="form-status"
+            role="status"
+            aria-live="polite"
+          ></p>
+
         </form>
 
       </div>
@@ -203,6 +212,79 @@
 
   <script src="js/particles.js"></script>
   <script src="js/main.js"></script>
+
+  <!-- Formspree AJAX Submission -->
+
+  <script>
+    const contactForm = document.getElementById("contact-form");
+    const formStatus = document.getElementById("form-status");
+
+    contactForm.addEventListener("submit", async function (event) {
+
+      event.preventDefault();
+
+      const submitButton = contactForm.querySelector('button[type="submit"]');
+
+      submitButton.disabled = true;
+      submitButton.textContent = "Sending...";
+
+      formStatus.textContent = "";
+      formStatus.className = "form-status";
+
+      const formData = new FormData(contactForm);
+
+      try {
+
+        const response = await fetch(contactForm.action, {
+          method: "POST",
+          body: formData,
+          headers: {
+            "Accept": "application/json"
+          }
+        });
+
+        if (response.ok) {
+
+          contactForm.reset();
+
+          submitButton.textContent = "✓ Message Sent";
+
+          formStatus.textContent =
+            "Thanks for reaching out! I'll get back to you as soon as I can.";
+
+          formStatus.classList.add("success");
+
+          setTimeout(() => {
+            submitButton.disabled = false;
+            submitButton.textContent = "Send Message →";
+          }, 5000);
+
+        } else {
+
+          submitButton.disabled = false;
+          submitButton.textContent = "Send Message →";
+
+          formStatus.textContent =
+            "Something went wrong. Please try again.";
+
+          formStatus.classList.add("error");
+
+        }
+
+      } catch (error) {
+
+        submitButton.disabled = false;
+        submitButton.textContent = "Send Message →";
+
+        formStatus.textContent =
+          "Something went wrong. Please try again.";
+
+        formStatus.classList.add("error");
+
+      }
+
+    });
+  </script>
 
 </body>
 
