@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Message Sent — landonw.dev</title>
+  <meta
+    name="description"
+    content="Your message has been sent to Landon."
+  />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/home.css" />
+  <link rel="stylesheet" href="css/message.css" />
+
+  <style>
+    .thank-you-card {
+      text-align: center;
+      align-items: center;
+    }
+
+    .thank-you-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 84px;
+      height: 84px;
+      margin: 0 auto 1.5rem;
+      border: 2px solid currentColor;
+      border-radius: 50%;
+      font-size: 3rem;
+      line-height: 1;
+      animation: thankYouPop 0.6s ease-out both;
+    }
+
+    .thank-you-icon span {
+      display: block;
+      animation: thankYouCheck 0.4s ease-out 0.3s both;
+    }
+
+    .thank-you-card h1 {
+      margin-bottom: 1rem;
+    }
+
+    .thank-you-card p {
+      max-width: 520px;
+      margin-bottom: 2rem;
+    }
+
+    @keyframes thankYouPop {
+      from {
+        opacity: 0;
+        transform: scale(0.6);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes thankYouCheck {
+      from {
+        opacity: 0;
+        transform: scale(0.5);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .thank-you-icon,
+      .thank-you-icon span {
+        animation: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Background Layers -->
+  <canvas id="grid-canvas" aria-hidden="true"></canvas>
+  <div class="grid-glow" aria-hidden="true"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html" class="navbar__brand">
+      <span class="navbar__logo">
+        landonw.dev
+      </span>
+    </a>
+
+    <button
+      class="navbar__toggle"
+      aria-label="Toggle navigation menu"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="navbar__links">
+      <li>
+        <a class="navbar__link" href="index.html#home">
+          Home
+        </a>
+      </li>
+
+      <li>
+        <a class="navbar__link" href="index.html#about">
+          About
+        </a>
+      </li>
+
+      <li>
+        <a class="navbar__link" href="index.html#projects">
+          Portfolio
+        </a>
+      </li>
+
+      <li>
+        <a class="navbar__link" href="contact.html">
+          Contact
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Thank You Page -->
+  <main class="contact-page">
+    <section class="contact-hero">
+
+      <div class="contact-card thank-you-card">
+
+        <div class="thank-you-icon" aria-hidden="true">
+          <span>✓</span>
+        </div>
+
+        <span class="eyebrow">
+          Message Sent
+        </span>
+
+        <h1>
+          Thank You
+        </h1>
+
+        <p>
+          Your message has been sent successfully.
+          I appreciate you reaching out and will get back
+          to you as soon as I can.
+        </p>
+
+        <a href="index.html" class="btn btn-primary">
+          Back to Portfolio →
+        </a>
+
+      </div>
+
+      <a href="contact.html" class="contact-back">
+        ← Send Another Message
+      </a>
+
+    </section>
+  </main>
+
+  <!-- Scripts -->
+  <script src="js/particles.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
