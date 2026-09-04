@@ -992,4 +992,28 @@
     width: 220px;
     height: 220px;
   }
+
+   /* ---------- Mobile overflow fix ---------- */
+
+@media (max-width: 768px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .hero,
+  .hero__content,
+  .hero__portrait {
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .hero__portrait {
+    width: 100%;
+  }
+
+  .portrait-card {
+    max-width: 100%;
+  }
+}
 }
