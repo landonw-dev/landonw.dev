@@ -910,17 +910,8 @@
 
 
 
-/* ---------- Mobile ---------- */
-
-@media (max-width: 768px) {
-
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
-
-}
-
 /* ---------- Responsive ---------- */
+
 @media (max-width: 1000px) {
   .hero {
     grid-template-columns: 1fr;
@@ -945,6 +936,34 @@
   }
 }
 
+/* ---------- Mobile ---------- */
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Give the hero a little more breathing room */
+  .hero {
+    gap: var(--space-4);
+  }
+
+  .hero__portrait {
+    height: 280px;
+  }
+
+  /* Keep project cards from feeling oversized */
+  .projects-grid {
+    gap: var(--space-4);
+  }
+
+  /* Two columns is still useful on tablets */
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-3);
+  }
+}
+
 @media (max-width: 600px) {
   .section {
     padding-block: calc(var(--nav-height) + var(--space-4)) var(--space-4);
@@ -954,8 +973,10 @@
     grid-template-columns: 1fr;
   }
 
+  /* One column is much cleaner on smaller phones */
   .skills-grid {
     grid-template-columns: 1fr;
+    gap: var(--space-3);
   }
 
   .portrait-card {
