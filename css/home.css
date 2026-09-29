@@ -1034,24 +1034,28 @@
 @media (max-width: 768px) {
 /* Keep the hero content and portrait within the screen */
 .hero {
-width: 100%;
-min-width: 0;
-grid-template-columns: minmax(0, 1fr);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-5);
+  width: 100%;
 }
 
 .hero__content {
-width: 100%;
-max-width: 100%;
-min-width: 0;
-margin-left: 0;
+  width: 100%;
+  margin-left: 0;
+  align-items: center;
+  text-align: center;
 }
 
 .hero__portrait {
-width: 100%;
-max-width: 100%;
-min-width: 0;
-margin-left: 0;
-justify-self: center;
+  order: -1;
+  width: 100%;
+  height: 280px;
+  margin-left: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .portrait-card {
