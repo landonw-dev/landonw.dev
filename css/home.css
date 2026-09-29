@@ -1097,6 +1097,16 @@ scroll-snap-align: none;
   height: auto;
   min-height: 0;
 }
+
+@media (max-width: 768px) {
+  #projects .portfolio-panel:last-child {
+    outline: 2px solid red;
+  }
+
+  #projects .timeline {
+    background: rgba(255, 0, 0, 0.1);
+  }
+}
    
 }
 
