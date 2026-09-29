@@ -56,31 +56,25 @@
   }
 
    /* ---------- Projects sliding tab ---------- */
-const tabs = document.querySelectorAll(".tab");
+    const tabs = document.querySelectorAll(".tab");
 const slider = document.querySelector(".portfolio-slider");
-const panels = document.querySelectorAll(".portfolio-panel");
 
-function updateSlider(index) {
-  slider.style.transform = `translateX(-${index * 100}%)`;
+tabs.forEach(tab => {
 
-  // Match the slider height to the active panel
-  const activePanel = panels[index];
-  if (activePanel) {
-    slider.style.height = `${activePanel.scrollHeight}px`;
-  }
-}
+    tab.addEventListener("click", () => {
 
-tabs.forEach((tab) => {
-  tab.addEventListener("click", () => {
-    tabs.forEach((t) => t.classList.remove("active"));
-    tab.classList.add("active");
+        tabs.forEach(t => t.classList.remove("active"));
 
-    updateSlider(Number(tab.dataset.tab));
-  });
+        tab.classList.add("active");
+
+        const index = tab.dataset.tab;
+
+        slider.style.transform = `translateX(-${index * 100}%)`;
+
+    });
+
 });
 
-// Set the initial height
-updateSlider(0);
   /* ---------- Generic reveal-on-scroll ---------- */
   function initRevealOnScroll() {
     const targets = document.querySelectorAll(".reveal, .reveal-stagger");
