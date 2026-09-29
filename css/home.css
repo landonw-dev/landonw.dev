@@ -961,6 +961,20 @@
     grid-template-columns: repeat(2, 1fr);
     gap: var(--space-3);
   }
+
+   /* Disable section snapping on mobile */
+  .snap-container {
+    height: auto;
+    min-height: 100vh;
+    overflow-y: visible;
+    scroll-snap-type: none;
+  }
+
+  .section {
+    min-height: 100vh;
+    height: auto;
+    scroll-snap-align: none;
+  }
 }
 
 @media (max-width: 600px) {
