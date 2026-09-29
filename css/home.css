@@ -1024,14 +1024,18 @@ overflow: hidden;
 }
 
 .portfolio-slider {
-width: 100%;
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  transition: transform 0.5s var(--ease-out);
 }
 
 .portfolio-panel {
-flex: 0 0 100%;
-width: 100%;
-max-width: 100%;
-min-width: 0;
+  flex: 0 0 100%;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow: hidden;
 }
 
 .portfolio-panel > * {
@@ -1079,18 +1083,7 @@ scroll-snap-type: none;
 min-height: 100vh;
 height: auto;
 scroll-snap-align: none;
-}
-
-.portfolio-slider {
-  align-items: flex-start;
-}
-
-.portfolio-panel {
-  height: auto;
-  align-self: flex-start;
-  overflow: hidden;
-}   
-
+}  
 }
 
 /* ---------- Small phones ---------- */
