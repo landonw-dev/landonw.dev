@@ -1054,6 +1054,19 @@ grid-template-columns: repeat(2, 1fr);
 gap: var(--space-3);
 }
 
+/* Experience */
+.timeline {
+  width: 100%;
+  max-width: 100%;
+  margin-left: 0;
+  min-width: 0;
+}
+
+.timeline-item {
+  max-width: 100%;
+  min-width: 0;
+}
+
 /* Disable section snapping on mobile */
 .snap-container {
 height: auto;
