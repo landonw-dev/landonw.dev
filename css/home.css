@@ -1082,6 +1082,22 @@ min-height: 100vh;
 height: auto;
 scroll-snap-align: none;
 }  
+
+#projects .portfolio-wrapper {
+  height: auto;
+  min-height: 0;
+}
+
+#projects .portfolio-slider {
+  height: auto;
+  min-height: 0;
+}
+
+#projects .portfolio-panel {
+  height: auto;
+  min-height: 0;
+}
+   
 }
 
 /* ---------- Small phones ---------- */
