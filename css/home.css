@@ -1099,12 +1099,18 @@ scroll-snap-align: none;
 }
 
 @media (max-width: 768px) {
-  #projects .portfolio-panel:last-child {
-    outline: 2px solid red;
+  #projects {
+    display: block;
   }
 
-  #projects .timeline {
-    background: rgba(255, 0, 0, 0.1);
+  #projects > .container {
+    width: 100%;
+  }
+
+  #projects .scroll-indicator {
+    position: static;
+    margin: 2rem auto 0;
+    display: block;
   }
 }
    
