@@ -1034,16 +1034,12 @@ grid-template-columns: repeat(2, 1fr);
   }
 
   .portfolio-slider {
-    align-items: flex-start;
     width: 100%;
   }
 
   .portfolio-panel {
-    flex: 0 0 100%;
-    width: 100%;
     max-width: 100%;
     min-width: 0;
-    align-self: flex-start;
   }
 
   .portfolio-panel > * {
@@ -1125,29 +1121,4 @@ grid-template-columns: repeat(2, 1fr);
     min-width: 0;
     max-width: 100%;
   }
-}
-   
-/* ---------- Small phones ---------- */
-@media (max-width: 600px) {
-.section {
-padding-block: calc(var(--nav-height) + var(--space-4)) var(--space-4);
-}
-
-.about__facts {
-grid-template-columns: 1fr;
-}
-
-.skills-grid {
-grid-template-columns: 1fr;
-gap: var(--space-3);
-}
-
-.hero,
-.hero__content,
-.hero__portrait,
-.portfolio-wrapper,
-.portfolio-panel {
-min-width: 0;
-max-width: 100%;
-}
 }
