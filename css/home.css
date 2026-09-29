@@ -1080,6 +1080,17 @@ min-height: 100vh;
 height: auto;
 scroll-snap-align: none;
 }
+
+.portfolio-slider {
+  align-items: flex-start;
+}
+
+.portfolio-panel {
+  height: auto;
+  align-self: flex-start;
+  overflow: hidden;
+}   
+
 }
 
 /* ---------- Small phones ---------- */
