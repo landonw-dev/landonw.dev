@@ -1081,25 +1081,8 @@ grid-template-columns: repeat(2, 1fr);
     height: auto;
     scroll-snap-align: none;
   }
-
-  /* Portfolio section layout */
-  #projects {
-    display: block;
-  }
-
-  #projects > .container {
-    width: 100%;
-  }
-
-  #projects .scroll-indicator {
-    position: static;
-    margin: 2rem auto 0;
-    display: block;
-  }
 }
    
-}
-
 /* ---------- Small phones ---------- */
 @media (max-width: 600px) {
 .section {
