@@ -1029,4 +1029,84 @@
     max-width: 100%;
   }
 }
+   
+   /* ---------- Mobile layout fixes ---------- */
+@media (max-width: 768px) {
+/* Keep the hero content and portrait within the screen */
+.hero {
+width: 100%;
+min-width: 0;
+grid-template-columns: minmax(0, 1fr);
+}
+
+.hero__content {
+width: 100%;
+max-width: 100%;
+min-width: 0;
+margin-left: 0;
+}
+
+.hero__portrait {
+width: 100%;
+max-width: 100%;
+min-width: 0;
+margin-left: 0;
+justify-self: center;
+}
+
+.portrait-card {
+width: min(220px, 65vw);
+max-width: 100%;
+}
+
+.portrait-ring--outer {
+width: min(280px, 80vw);
+height: min(280px, 80vw);
+}
+
+.portrait-ring--inner {
+width: min(220px, 65vw);
+height: min(220px, 65vw);
+}
+
+/* Keep project content inside its panel */
+.portfolio-wrapper {
+width: 100%;
+max-width: 100%;
+overflow: hidden;
+}
+
+.portfolio-slider {
+width: 100%;
+}
+
+.portfolio-panel {
+flex: 0 0 100%;
+min-width: 0;
+max-width: 100%;
+}
+
+.projects-grid {
+grid-template-columns: minmax(0, 1fr);
+width: 100%;
+}
+
+.project-explore {
+margin-left: 0;
+}
+}
+
+/* Prevent horizontal overflow on narrow phones */
+@media (max-width: 600px) {
+.hero,
+.hero__content,
+.hero__portrait,
+.portfolio-wrapper,
+.portfolio-panel {
+min-width: 0;
+max-width: 100%;
+}
+}
+
+   
 }
