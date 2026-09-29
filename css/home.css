@@ -941,164 +941,148 @@ grid-template-columns: repeat(2, 1fr);
 
 /* ---------- Mobile ---------- */
 @media (max-width: 768px) {
-html,
-body {
-overflow-x: hidden;
-}
+  html,
+  body {
+    overflow-x: hidden;
+  }
 
-.contact-grid {
-grid-template-columns: 1fr;
-}
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
 
-/* Stack the hero portrait and text */
-.hero {
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-gap: var(--space-4);
-width: 100%;
-min-width: 0;
-}
+  /* Homepage */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-4);
+    width: 100%;
+    min-width: 0;
+  }
 
-.hero__grid {
-  display: flex !important;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: var(--space-4);
-  width: 100%;
-  min-width: 0;
-}
-   
-.hero__content {
-width: 100%;
-max-width: 100%;
-min-width: 0;
-margin-left: 0;
-align-items: center;
-text-align: center;
-order: 2;
-}
+  .hero__grid {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-4);
+    width: 100%;
+    min-width: 0;
+  }
 
-.hero__portrait {
-order: 1;
-display: flex;
-justify-content: center;
-align-items: center;
-width: 100%;
-max-width: 100%;
-min-width: 0;
-height: 280px;
-margin-left: 0;
-}
+  .hero__content {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    margin-left: 0;
+    align-items: center;
+    text-align: center;
+    order: 2;
+  }
 
-/* Keep the portrait within the screen */
-.portrait-card {
-width: min(220px, 65vw);
-max-width: 100%;
-}
+  .hero__portrait {
+    order: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    height: 280px;
+    margin-left: 0;
+  }
 
-.portrait-ring--outer {
-width: min(280px, 80vw);
-height: min(280px, 80vw);
-}
+  .portrait-card {
+    width: min(220px, 65vw);
+    max-width: 100%;
+  }
 
-.portrait-ring--inner {
-width: min(220px, 65vw);
-height: min(220px, 65vw);
-}
+  .portrait-ring--outer {
+    width: min(280px, 80vw);
+    height: min(280px, 80vw);
+  }
 
-/* Project layout */
-.projects-grid {
-grid-template-columns: minmax(0, 1fr);
-gap: var(--space-4);
-width: 100%;
-min-width: 0;
-}
+  .portrait-ring--inner {
+    width: min(220px, 65vw);
+    height: min(220px, 65vw);
+  }
 
-.portfolio-wrapper {
-width: 100%;
-max-width: 100%;
-overflow: hidden;
-}
+  /* Portfolio */
+  .projects-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-4);
+    width: 100%;
+    min-width: 0;
+  }
 
-.portfolio-slider {
-  display: flex;
-  width: 100%;
-  transition: transform 0.5s var(--ease-out);
-}
+  .portfolio-wrapper {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
 
-.portfolio-panel {
-  flex: 0 0 100%;
-  width: 100%;
-  max-width: 100%;
-  min-width: 0;
-}
+  .portfolio-slider {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s var(--ease-out);
+  }
 
-.portfolio-panel > * {
-max-width: 100%;
-min-width: 0;
-}
+  .portfolio-panel {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
 
-.project-card {
-max-width: 100%;
-min-width: 0;
-}
+  .portfolio-panel > * {
+    max-width: 100%;
+    min-width: 0;
+  }
 
-.project-explore {
-margin-left: 0;
-}
+  .project-card {
+    max-width: 100%;
+    min-width: 0;
+  }
 
-/* Skills */
-.skills-grid {
-grid-template-columns: repeat(2, 1fr);
-gap: var(--space-3);
-}
+  .project-explore {
+    margin-left: 0;
+  }
 
-/* Experience */
-.timeline {
-  width: 100%;
-  max-width: 100%;
-  margin-left: 0;
-  min-width: 0;
-}
+  /* Skills */
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-3);
+  }
 
-.timeline-item {
-  max-width: 100%;
-  min-width: 0;
-}
+  /* Experience */
+  .timeline {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    min-width: 0;
+  }
 
-/* Disable section snapping on mobile */
-.snap-container {
-height: auto;
-min-height: 100vh;
-overflow-y: visible;
-scroll-snap-type: none;
-}
+  .timeline-item {
+    max-width: 100%;
+    min-width: 0;
+  }
 
-.section {
-min-height: 100vh;
-height: auto;
-scroll-snap-align: none;
-}  
+  /* Disable section snapping on mobile */
+  .snap-container {
+    height: auto;
+    min-height: 100vh;
+    overflow-y: visible;
+    scroll-snap-type: none;
+  }
 
-#projects .portfolio-wrapper {
-  height: auto;
-  min-height: 0;
-}
+  .section {
+    min-height: 100vh;
+    height: auto;
+    scroll-snap-align: none;
+  }
 
-#projects .portfolio-slider {
-  height: auto;
-  min-height: 0;
-}
-
-#projects .portfolio-panel {
-  height: auto;
-  min-height: 0;
-}
-
-@media (max-width: 768px) {
+  /* Portfolio section layout */
   #projects {
     display: block;
   }
