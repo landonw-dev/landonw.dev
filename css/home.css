@@ -13,7 +13,6 @@
 }
   /* JS drives the actual section-by-section transitions; native snap is a
      graceful fallback for touch / reduced-motion users. */
-}
 
 .snap-container::-webkit-scrollbar {
   display: none;
